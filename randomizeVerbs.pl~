@@ -1,3 +1,0 @@
-#!/usr/bin/perl
-
-@verb={move,move-left,move-right,discard};
