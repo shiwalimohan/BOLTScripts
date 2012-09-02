@@ -138,7 +138,7 @@ for($j=0;$j<$trialLength;$j++){
 		print "} Remove demo objects\n";
 	    }
  	    print "> Pick up the " . $verbDirectObject . "\n";
-	    print "> Put the " . $verbDirectObject . " " . $goalPreposition . " " . $prepArgument . "\n";
+	    print "> Put the " . $verbDirectObject . " " . $goalPreposition . " the " . $prepArgument . "\n";
 	    print "> You are done.\n";
 	    
 	}
