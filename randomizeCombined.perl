@@ -19,7 +19,7 @@ $shapeLength=@shape;
 @location=("pantry","dishwasher","garbage","table");
 $locationLength=@location;
 
-@prep=("to the left of","to the right of","in front of");
+@prep=("to the left of","to the right of","in front of","in");
 $prepLength=@prep;
 
 
@@ -31,6 +31,12 @@ $move = "move";
 $store = "store";
 $discard = "discard";
 
+$demoObject1 = "small red circle";
+$demoObject2 = "small blue circle";
+
+
+print "#!BechtelFormat \n";
+print "@ classifier clear \n";
 
 print "# Objects for the run are\n";
 for($i=0;$i<$objectSelectionLength;$i++){
@@ -38,9 +44,41 @@ for($i=0;$i<$objectSelectionLength;$i++){
     $rColor = int(rand($colorLength));
     $rShape = int(rand($shapeLength));
 
-    $object = $size[$rSize] . " " . $color[$rColor] . " " . $shape[$rShape];
+    $selectedSize=$size[$rSize];
+    $selectedColor=$color[$rColor];
+    $selectedShape=$shape[$rShape];
+
+    @selectedObject=($selectedSize,$selectedColor,$selectedShape);
+    @sortedObject=sort @selectedObject;
+
+    $object = $selectedSize . " " . $selectedColor . " " . $selectedShape;
+
+    $k = 0;  
+    for($j=0;$j<3;$j++){
+	if($sortedObject[$j] eq $selectedSize){
+	    $aString[$k++] = "> ". $selectedSize . " is a size.";
+	}
+
+	if($sortedObject[$j] eq $selectedShape){
+	    $aString[$k++]="> ". $selectedShape . " is a shape.";
+	}
+
+	if($sortedObject[$j] eq $selectedColor){
+	    $aString[$k++]="> " . $selectedColor . " is a color.";
+	}
+    }
+
+    $aString[$k++]= "} " . "Select the " . $object;
+    $aString[$k++] = "> " . "This is " . $selectedSize;
+    $aString[$k++] = "> " . "This is a " . $selectedShape;
+    $aString[$k++] = "> " . "This is " . $selectedColor;
+
+    $teachInteraction= join "\n",@aString;
 
     @objects[$i]=$object;
+    @teachObjects[$i]=$teachInteraction . "\n";
+
+
     print "# " . "Object " . $i . ": " . $objects[$i] . "\n";
 }
 
@@ -49,46 +87,66 @@ for($i=0;$i<$objectSelectionLength;$i++){
 
 for($j=0;$j<$trialLength;$j++){
     print "Start trial " . $j . "\n";
-    print "} rearrange objects\n";
+    print "} rearrange objects \n";
     for($i=0;$i<$commandLength;$i++){
+	print "# Starting command " . $i . "\n";
 	$vRand = int(rand($verbLength));
-	$verbDirectObject=$objects[int(rand($objectSelectionLength))];
+	$objectIndex = int(rand($objectSelectionLength));
+	$verbDirectObject=$objects[$objectIndex];
+	$objectInteraction=$teachObjects[$objectIndex];
 	$currentVerb=$verb[$vRand];
 	
 	if($currentVerb eq $move){
-	    $dice=int(rand(2));
 	    $preposition=@prep[int(rand($prepLength))];
-	    $prepObject=$objects[int(rand($objectSelectionLength))];
 	    $prepLocation=$location[int(rand($locationLength))];
-	    if($dice==1){
-		$prepArgument=$prepObject;
+	    $prepArgument=$prepLocation;
+	    if($preposition eq "in"){
+	        $verbPreposition="to";
+		$goalPreposition="in";
+	    }
+	    else{
 		$verbPreposition=$preposition;
 		$goalPreposition=$preposition;
 	    }
-	    if($dice==0){
-		$prepArgument=$prepLocation;
-		$verbPreposition="to";
-		$goalPreposition="in";
-	    }
+	  
+	    print "} Place" . " the " . $verbDirectObject . " anywhere but " . $verbPreposition . " the " . $prepArgument . "\n"; 
 	    print "> Move" . " " . "the " . $verbDirectObject . " " . $verbPreposition . " " . "the " . $prepArgument . "\n";
+	    print $objectInteraction;
+	    if ($verbPreposition ne "to"){
+		print "} Place the " . $demoObject1 . " " . $verbPreposition . " the " . $demoObject2 . "\n";
+		print "> The " . $demoObject1 . " is " . $verbPreposition . " the " . $demoObject2 . "\n";
+		print "} Remove demo objects\n";
+	    }
 	    print "> The goal is the " . $verbDirectObject . " " . $goalPreposition ." the ". $prepArgument . "\n";
+            if ($verbPreposition eq "to"){
+		print "} Place the " . $demoObject1 . " in the table\n";
+		print "> The " . $demoObject1 . " is in the table\n";
+		print "} Remove demo objects\n";
+	    }
  	    print "> Pick up the " . $verbDirectObject . "\n";
-	    print "> Put the " . $verbDirectObject . " " . $verbPreposition . " " . $prepArgument . "\n";
+	    print "> Put the " . $verbDirectObject . " " . $goalPreposition . " " . $prepArgument . "\n";
 	    print "> You are done.\n";
 	    
 	}
-	if ($vRand==1){
-	    $verbDirectObject=$objects[int(rand($objectSelectionLength))];
+
+	if ($currentVerb eq $store){
 	    print "> Store" . " " . "the " . $verbDirectObject . "\n";
+	    print $objectInteraction;
 	    print "> The goal is the " . $verbDirectObject . " in the ". "pantry" . "\n";
+	    print "} Place the " . $demoObject1 . " in the table\n";
+	    print "> The " . $demoObject1 . " is in the table\n";
+	    print "} Remove demo objects\n";
  	    print "> Pick up the " . $verbDirectObject . "\n";
 	    print "> Put the " . $verbDirectObject . " " . "in the" . " " . "pantry" . "\n";
 	    print "> You are done.\n";
 	}
-	if ($vRand==2){
-	    $verbDirectObject=$objects[int(rand($objectSelectionLength))];
+	if ($currentVerb eq $discard){
 	    print "> Discard" . " " . "the " . $verbDirectObject . "\n";
+	    print $objectInteraction;
 	    print "> The goal is the " . $verbDirectObject . " in the ". "garbage" . "\n";
+	    print "} Place the " . $demoObject1 . " in the table\n";
+	    print "> The " . $demoObject1 . " is in the table\n";
+	    print "} Remove demo objects\n";
  	    print "> Pick up the " . $verbDirectObject . "\n";
 	    print "> Put the " . $verbDirectObject . " " . "in the" . " " . "garbage" . "\n";
 	    print "> You are done.\n";
