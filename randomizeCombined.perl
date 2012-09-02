@@ -76,7 +76,7 @@ for($i=0;$i<$objectSelectionLength;$i++){
     $teachInteraction= join "\n",@aString;
 
     @objects[$i]=$object;
-    @teachObjects[$i]=$teachInteraction . "\n";
+    @teachObjects[$i]=$teachInteraction . "\n> Finished. \n";
 
 
     print "# " . "Object " . $i . ": " . $objects[$i] . "\n";
@@ -114,13 +114,13 @@ for($j=0;$j<$trialLength;$j++){
 	    print $objectInteraction;
 	    if ($verbPreposition ne "to"){
 		print "} Place the " . $demoObject1 . " " . $verbPreposition . " the " . $demoObject2 . "\n";
-		print "> The " . $demoObject1 . " is " . $verbPreposition . " the " . $demoObject2 . "\n";
+		print "> The " . $demoObject1 . " is " . $verbPreposition . " the " . $demoObject2 . "\n> Finished \n";
 		print "} Remove demo objects\n";
 	    }
 	    print "> The goal is the " . $verbDirectObject . " " . $goalPreposition ." the ". $prepArgument . "\n";
             if ($verbPreposition eq "to"){
 		print "} Place the " . $demoObject1 . " in the table\n";
-		print "> The " . $demoObject1 . " is in the table\n";
+		print "> The " . $demoObject1 . " is in the table\n> Finished \n";
 		print "} Remove demo objects\n";
 	    }
  	    print "> Pick up the " . $verbDirectObject . "\n";
@@ -134,7 +134,7 @@ for($j=0;$j<$trialLength;$j++){
 	    print $objectInteraction;
 	    print "> The goal is the " . $verbDirectObject . " in the ". "pantry" . "\n";
 	    print "} Place the " . $demoObject1 . " in the table\n";
-	    print "> The " . $demoObject1 . " is in the table\n";
+	    print "> The " . $demoObject1 . " is in the table\n> Finished \n";
 	    print "} Remove demo objects\n";
  	    print "> Pick up the " . $verbDirectObject . "\n";
 	    print "> Put the " . $verbDirectObject . " " . "in the" . " " . "pantry" . "\n";
@@ -145,7 +145,7 @@ for($j=0;$j<$trialLength;$j++){
 	    print $objectInteraction;
 	    print "> The goal is the " . $verbDirectObject . " in the ". "garbage" . "\n";
 	    print "} Place the " . $demoObject1 . " in the table\n";
-	    print "> The " . $demoObject1 . " is in the table\n";
+	    print "> The " . $demoObject1 . " is in the table\n> Finished \n";
 	    print "} Remove demo objects\n";
  	    print "> Pick up the " . $verbDirectObject . "\n";
 	    print "> Put the " . $verbDirectObject . " " . "in the" . " " . "garbage" . "\n";
