@@ -1,155 +1,23 @@
 #!BechtelFormat 
 @ classifier clear 
 # Objects for the run are
-# Object 0: large red arch
-# Object 1: large green triangle
-# Object 2: large yellow triangle
-# Object 3: large green triangle
-# Object 4: large red triangle
-# Object 5: large yellow rectangle
-# Object 6: small yellow arch
-# Object 7: large yellow arch
-# Object 8: large green rectangle
-# Object 9: small red arch
-# Object 10: small red arch
-# Object 11: large green triangle
-Start trial 0
-} rearrange objects 
-# Starting command 0
-} Place the large green rectangle anywhere but to the left of the dishwasher
-> Move the large green rectangle to the left of the dishwasher
-> green is a color.
-> large is a size.
-> rectangle is a shape.
-} Select the large green rectangle
-> This is large
-> This is a rectangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green rectangle to the left of the dishwasher
-> Pick up the large green rectangle
-> Put the large green rectangle to the left of dishwasher
-> You are done.
-# Starting command 1
-} Place the large yellow triangle anywhere but near the garbage
-> Move the large yellow triangle near the garbage
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow triangle near the garbage
-> Pick up the large yellow triangle
-> Put the large yellow triangle near garbage
-> You are done.
-# Starting command 2
-} Place the large green triangle anywhere but near the table
-> Move the large green triangle near the table
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle near the table
-> Pick up the large green triangle
-> Put the large green triangle near table
-> You are done.
-# Starting command 3
-} Place the large green triangle anywhere but to the left of the dishwasher
-> Move the large green triangle to the left of the dishwasher
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the left of the dishwasher
-> Pick up the large green triangle
-> Put the large green triangle to the left of dishwasher
-> You are done.
-# Starting command 4
-} Place the large yellow rectangle anywhere but to the right of the pantry
-> Move the large yellow rectangle to the right of the pantry
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow rectangle to the right of the pantry
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle to the right of pantry
-> You are done.
-# Starting command 5
-} Place the large yellow triangle anywhere but to the left of the pantry
-> Move the large yellow triangle to the left of the pantry
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow triangle to the left of the pantry
-> Pick up the large yellow triangle
-> Put the large yellow triangle to the left of pantry
-> You are done.
-# Starting command 6
-} Place the large green rectangle anywhere but to the right of the garbage
-> Move the large green rectangle to the right of the garbage
-> green is a color.
-> large is a size.
-> rectangle is a shape.
-} Select the large green rectangle
-> This is large
-> This is a rectangle
-> This is green
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green rectangle to the right of the garbage
-> Pick up the large green rectangle
-> Put the large green rectangle to the right of garbage
-> You are done.
-# Starting command 7
-> Store the small red arch
+# Object 0: large red triangle
+# Object 1: small blue rectangle
+# Object 2: large green rectangle
+# Object 3: large red arch
+# Object 4: small red rectangle
+# Object 5: large blue arch
+# Object 6: small green rectangle
+# Object 7: small blue triangle
+# Object 8: small green arch
+# Object 9: large red rectangle
+# Object 10: large green arch
+# Object 11: small green triangle
+# Object 12: small red arch
+# The demo object is small red arch
+# Training the agent for the demo object 
+} Put the small red arch on the board
+> Point to the small red arch
 > arch is a shape.
 > red is a color.
 > small is a size.
@@ -158,53 +26,73 @@ Start trial 0
 > This is a arch
 > This is red
 > Finished. 
-> The goal is the small red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the pantry
-> You are done.
-# Starting command 8
-} Place the large green triangle anywhere but near the dishwasher
-> Move the large green triangle near the dishwasher
-> green is a color.
+} Reset arm
+# Start trial 0
+} rearrange objects 
+# Starting command 0
+} Place the large red rectangle in the garbage
+> Discard the large red rectangle
 > large is a size.
-> triangle is a shape.
-} Select the large green triangle
+> rectangle is a shape.
+> red is a color.
+} Select the large red rectangle
 > This is large
-> This is a triangle
-> This is green
+> This is a rectangle
+> This is red
 > Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
+> The goal is the large red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large green triangle near the dishwasher
-> Pick up the large green triangle
-> Put the large green triangle near dishwasher
+> Pick up the large red rectangle
+> Put the large red rectangle in the garbage
 > You are done.
-# Starting command 9
-> Discard the large yellow triangle
+# Starting command 1
+} Place the small blue triangle in the garbage
+> Discard the small blue triangle
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+> The goal is the small blue triangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue triangle
+> Put the small blue triangle in the garbage
+> You are done.
+# Starting command 2
+} Place the large blue arch anywhere but to the stove
+> Move the large blue arch to the stove
+> arch is a shape.
+> blue is a color.
 > large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
+} Select the large blue arch
 > This is large
-> This is a triangle
-> This is yellow
+> This is a arch
+> This is blue
 > Finished. 
-> The goal is the large yellow triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the large blue arch in the stove
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large yellow triangle
-> Put the large yellow triangle in the garbage
+> Pick up the large blue arch
+> Put the large blue arch in the stove
 > You are done.
-# Starting command 10
-> Store the large red arch
+# Starting command 3
+} Place the large red arch anywhere but near the stove
+> Move the large red arch near the stove
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
 > arch is a shape.
 > large is a size.
 > red is a color.
@@ -213,352 +101,39 @@ Start trial 0
 > This is a arch
 > This is red
 > Finished. 
-> The goal is the large red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch near the table
+> The small red arch is near the table
 > Finished 
 } Remove demo objects
+> The goal is the large red arch near the stove
 > Pick up the large red arch
-> Put the large red arch in the pantry
+> Put the large red arch near the stove
 > You are done.
-# Starting command 11
-} Place the large green triangle anywhere but near the table
-> Move the large green triangle near the table
+# Starting command 4
+} Place the small green rectangle anywhere but to the right of the table
+> Move the small green rectangle to the right of the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
 > green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle near the table
-> Pick up the large green triangle
-> Put the large green triangle near table
-> You are done.
-# Starting command 12
-} Place the large green triangle anywhere but near the garbage
-> Move the large green triangle near the garbage
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle near the garbage
-> Pick up the large green triangle
-> Put the large green triangle near garbage
-> You are done.
-# Starting command 13
-} Place the small red arch anywhere but to the left of the table
-> Move the small red arch to the left of the table
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the left of the table
-> Pick up the small red arch
-> Put the small red arch to the left of table
-> You are done.
-# Starting command 14
-> Store the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the pantry
-> You are done.
-# Starting command 15
-> Discard the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the garbage
-> You are done.
-# Starting command 16
-} Place the small red arch anywhere but to the right of the pantry
-> Move the small red arch to the right of the pantry
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the right of the pantry
-> Pick up the small red arch
-> Put the small red arch to the right of pantry
-> You are done.
-# Starting command 17
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
-> You are done.
-# Starting command 18
-} Place the large yellow rectangle anywhere but to the pantry
-> Move the large yellow rectangle to the pantry
-> large is a size.
 > rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow rectangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle in pantry
-> You are done.
-# Starting command 19
-} Place the large yellow arch anywhere but to the left of the dishwasher
-> Move the large yellow arch to the left of the dishwasher
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow arch to the left of the dishwasher
-> Pick up the large yellow arch
-> Put the large yellow arch to the left of dishwasher
-> You are done.
-# Starting command 20
-} Place the small red arch anywhere but near the pantry
-> Move the small red arch near the pantry
-> arch is a shape.
-> red is a color.
 > small is a size.
-} Select the small red arch
+} Select the small green rectangle
 > This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch near the pantry
-> Pick up the small red arch
-> Put the small red arch near pantry
-> You are done.
-# Starting command 21
-> Store the large yellow rectangle
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow rectangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle in the pantry
-> You are done.
-# Starting command 22
-} Place the large green triangle anywhere but to the left of the dishwasher
-> Move the large green triangle to the left of the dishwasher
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the left of the dishwasher
-> Pick up the large green triangle
-> Put the large green triangle to the left of dishwasher
-> You are done.
-# Starting command 23
-} Place the large green triangle anywhere but to the left of the dishwasher
-> Move the large green triangle to the left of the dishwasher
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the left of the dishwasher
-> Pick up the large green triangle
-> Put the large green triangle to the left of dishwasher
-> You are done.
-# Starting command 24
-} Place the small red arch anywhere but near the dishwasher
-> Move the small red arch near the dishwasher
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch near the dishwasher
-> Pick up the small red arch
-> Put the small red arch near dishwasher
-> You are done.
-# Starting command 25
-} Place the large green rectangle anywhere but to the left of the pantry
-> Move the large green rectangle to the left of the pantry
-> green is a color.
-> large is a size.
-> rectangle is a shape.
-} Select the large green rectangle
-> This is large
 > This is a rectangle
 > This is green
 > Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> The goal is the large green rectangle to the left of the pantry
-> Pick up the large green rectangle
-> Put the large green rectangle to the left of pantry
+> The goal is the small green rectangle to the right of the table
+> Pick up the small green rectangle
+> Put the small green rectangle to the right of the table
 > You are done.
-# Starting command 26
-} Place the small red arch anywhere but to the left of the table
-> Move the small red arch to the left of the table
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the left of the table
-> Pick up the small red arch
-> Put the small red arch to the left of table
-> You are done.
-# Starting command 27
-> Discard the large yellow arch
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the large yellow arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in the garbage
-> You are done.
-# Starting command 28
-} Place the small yellow arch anywhere but to the left of the table
-> Move the small yellow arch to the left of the table
-> arch is a shape.
-> small is a size.
-> yellow is a color.
-} Select the small yellow arch
-> This is small
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small yellow arch to the left of the table
-> Pick up the small yellow arch
-> Put the small yellow arch to the left of table
-> You are done.
-# Starting command 29
+# Starting command 5
+} Place the large green rectangle in the garbage
 > Discard the large green rectangle
 > green is a color.
 > large is a size.
@@ -569,256 +144,20 @@ Start trial 0
 > This is green
 > Finished. 
 > The goal is the large green rectangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
 > Pick up the large green rectangle
 > Put the large green rectangle in the garbage
 > You are done.
-# Starting command 30
-} Place the large red arch anywhere but near the table
-> Move the large red arch near the table
-> arch is a shape.
-> large is a size.
-> red is a color.
-} Select the large red arch
-> This is large
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
+# Starting command 6
+} Place the large green rectangle anywhere but to the right of the stove
+> Move the large green rectangle to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> The goal is the large red arch near the table
-> Pick up the large red arch
-> Put the large red arch near table
-> You are done.
-# Starting command 31
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
-> You are done.
-# Starting command 32
-> Discard the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the garbage
-> You are done.
-# Starting command 33
-> Discard the large red triangle
-> large is a size.
-> red is a color.
-> triangle is a shape.
-} Select the large red triangle
-> This is large
-> This is a triangle
-> This is red
-> Finished. 
-> The goal is the large red triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large red triangle
-> Put the large red triangle in the garbage
-> You are done.
-# Starting command 34
-} Place the small yellow arch anywhere but to the dishwasher
-> Move the small yellow arch to the dishwasher
-> arch is a shape.
-> small is a size.
-> yellow is a color.
-} Select the small yellow arch
-> This is small
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the small yellow arch in the dishwasher
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small yellow arch
-> Put the small yellow arch in dishwasher
-> You are done.
-# Starting command 35
-> Discard the large yellow rectangle
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow rectangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle in the garbage
-> You are done.
-# Starting command 36
-} Place the large yellow triangle anywhere but to the left of the dishwasher
-> Move the large yellow triangle to the left of the dishwasher
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow triangle to the left of the dishwasher
-> Pick up the large yellow triangle
-> Put the large yellow triangle to the left of dishwasher
-> You are done.
-# Starting command 37
-} Place the large yellow rectangle anywhere but to the table
-> Move the large yellow rectangle to the table
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow rectangle in the table
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle in table
-> You are done.
-# Starting command 38
-> Store the large red triangle
-> large is a size.
-> red is a color.
-> triangle is a shape.
-} Select the large red triangle
-> This is large
-> This is a triangle
-> This is red
-> Finished. 
-> The goal is the large red triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large red triangle
-> Put the large red triangle in the pantry
-> You are done.
-# Starting command 39
-} Place the large yellow arch anywhere but to the left of the table
-> Move the large yellow arch to the left of the table
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow arch to the left of the table
-> Pick up the large yellow arch
-> Put the large yellow arch to the left of table
-> You are done.
-# Starting command 40
-> Discard the large yellow rectangle
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow rectangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle in the garbage
-> You are done.
-# Starting command 41
-} Place the large red arch anywhere but to the right of the table
-> Move the large red arch to the right of the table
-> arch is a shape.
-> large is a size.
-> red is a color.
-} Select the large red arch
-> This is large
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large red arch to the right of the table
-> Pick up the large red arch
-> Put the large red arch to the right of table
-> You are done.
-# Starting command 42
-> Discard the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the garbage
-> You are done.
-# Starting command 43
-} Place the large green rectangle anywhere but to the left of the dishwasher
-> Move the large green rectangle to the left of the dishwasher
 > green is a color.
 > large is a size.
 > rectangle is a shape.
@@ -827,187 +166,223 @@ Start trial 0
 > This is a rectangle
 > This is green
 > Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> The goal is the large green rectangle to the left of the dishwasher
+> The goal is the large green rectangle to the right of the stove
 > Pick up the large green rectangle
-> Put the large green rectangle to the left of dishwasher
+> Put the large green rectangle to the right of the stove
 > You are done.
-# Starting command 44
-} Place the large yellow rectangle anywhere but near the table
-> Move the large yellow rectangle near the table
+# Starting command 7
+} Place the small blue triangle in the garbage
+> Discard the small blue triangle
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+> The goal is the small blue triangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue triangle
+> Put the small blue triangle in the garbage
+> You are done.
+# Starting command 8
+} Place the large blue arch in the garbage
+> Discard the large blue arch
+> arch is a shape.
+> blue is a color.
 > large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+> The goal is the large blue arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large blue arch
+> Put the large blue arch in the garbage
+> You are done.
+# Starting command 9
+} Place the small blue triangle in the pantry
+> Store the small blue triangle
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+> The goal is the small blue triangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue triangle
+> Put the small blue triangle in the pantry
+> You are done.
+# Starting command 10
+} Place the small green rectangle anywhere but to the stove
+> Move the small green rectangle to the stove
+> green is a color.
 > rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
+> small is a size.
+} Select the small green rectangle
+> This is small
 > This is a rectangle
-> This is yellow
+> This is green
 > Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
+> The goal is the small green rectangle in the stove
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow rectangle near the table
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle near table
+> Pick up the small green rectangle
+> Put the small green rectangle in the stove
 > You are done.
-# Starting command 45
-} Place the small red arch anywhere but to the table
-> Move the small red arch to the table
-> arch is a shape.
-> red is a color.
+# Starting command 11
+} Place the small blue triangle in the pantry
+> Store the small blue triangle
+> blue is a color.
 > small is a size.
-} Select the small red arch
+> triangle is a shape.
+} Select the small blue triangle
 > This is small
-> This is a arch
-> This is red
+> This is a triangle
+> This is blue
 > Finished. 
-> The goal is the small red arch in the table
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small blue triangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in table
+> Pick up the small blue triangle
+> Put the small blue triangle in the pantry
 > You are done.
-# Starting command 46
-} Place the large yellow arch anywhere but to the dishwasher
-> Move the large yellow arch to the dishwasher
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the large yellow arch in the dishwasher
-} Place the small red circle in the table
-> The small red circle is in the table
+# Starting command 12
+} Place the small green rectangle anywhere but to the right of the table
+> Move the small green rectangle to the right of the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in dishwasher
-> You are done.
-# Starting command 47
-} Place the small yellow arch anywhere but to the right of the garbage
-> Move the small yellow arch to the right of the garbage
-> arch is a shape.
-> small is a size.
-> yellow is a color.
-} Select the small yellow arch
-> This is small
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small yellow arch to the right of the garbage
-> Pick up the small yellow arch
-> Put the small yellow arch to the right of garbage
-> You are done.
-# Starting command 48
-> Store the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the pantry
-> You are done.
-# Starting command 49
-} Place the large yellow rectangle anywhere but to the right of the table
-> Move the large yellow rectangle to the right of the table
-> large is a size.
+> green is a color.
 > rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
+> small is a size.
+} Select the small green rectangle
+> This is small
 > This is a rectangle
-> This is yellow
+> This is green
 > Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow rectangle to the right of the table
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle to the right of table
+> The goal is the small green rectangle to the right of the table
+> Pick up the small green rectangle
+> Put the small green rectangle to the right of the table
 > You are done.
-Start trial 1
-} rearrange objects 
-# Starting command 0
-} Place the small red arch anywhere but to the left of the pantry
-> Move the small red arch to the left of the pantry
+# Starting command 13
+} Place the large blue arch in the pantry
+> Store the large blue arch
 > arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the left of the pantry
-> Pick up the small red arch
-> Put the small red arch to the left of pantry
-> You are done.
-# Starting command 1
-> Store the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the pantry
-> You are done.
-# Starting command 2
-> Store the large yellow rectangle
+> blue is a color.
 > large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
+} Select the large blue arch
 > This is large
-> This is a rectangle
-> This is yellow
+> This is a arch
+> This is blue
 > Finished. 
-> The goal is the large yellow rectangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the large blue arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle in the pantry
+> Pick up the large blue arch
+> Put the large blue arch in the pantry
 > You are done.
-# Starting command 3
-} Place the large red arch anywhere but near the table
-> Move the large red arch near the table
+# Starting command 14
+} Place the small green rectangle anywhere but to the pantry
+> Move the small green rectangle to the pantry
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
+> Finished. 
+> The goal is the small green rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green rectangle
+> Put the small green rectangle in the pantry
+> You are done.
+# Starting command 15
+} Place the small blue triangle anywhere but to the left of the table
+> Move the small blue triangle to the left of the table
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the left of the table
+> Pick up the small blue triangle
+> Put the small blue triangle to the left of the table
+> You are done.
+# Starting command 16
+} Place the large blue arch anywhere but to the left of the pantry
+> Move the large blue arch to the left of the pantry
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large blue arch to the left of the pantry
+> Pick up the large blue arch
+> Put the large blue arch to the left of the pantry
+> You are done.
+# Starting command 17
+} Place the large red arch anywhere but to the right of the garbage
+> Move the large red arch to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
 > arch is a shape.
 > large is a size.
 > red is a color.
@@ -1016,110 +391,17 @@ Start trial 1
 > This is a arch
 > This is red
 > Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> The goal is the large red arch near the table
+> The goal is the large red arch to the right of the garbage
 > Pick up the large red arch
-> Put the large red arch near table
+> Put the large red arch to the right of the garbage
 > You are done.
-# Starting command 4
-} Place the large yellow rectangle anywhere but near the table
-> Move the large yellow rectangle near the table
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow rectangle near the table
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle near table
-> You are done.
-# Starting command 5
-} Place the small red arch anywhere but to the left of the garbage
-> Move the small red arch to the left of the garbage
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the left of the garbage
-> Pick up the small red arch
-> Put the small red arch to the left of garbage
-> You are done.
-# Starting command 6
-} Place the large green triangle anywhere but to the pantry
-> Move the large green triangle to the pantry
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in pantry
-> You are done.
-# Starting command 7
-> Discard the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the garbage
-> You are done.
-# Starting command 8
-> Store the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the pantry
-> You are done.
-# Starting command 9
-} Place the large red triangle anywhere but to the pantry
-> Move the large red triangle to the pantry
+# Starting command 18
+} Place the large red triangle in the pantry
+> Store the large red triangle
 > large is a size.
 > red is a color.
 > triangle is a shape.
@@ -1129,90 +411,198 @@ Start trial 1
 > This is red
 > Finished. 
 > The goal is the large red triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
 > Pick up the large red triangle
-> Put the large red triangle in pantry
+> Put the large red triangle in the pantry
 > You are done.
-# Starting command 10
-} Place the large green triangle anywhere but near the pantry
-> Move the large green triangle near the pantry
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
+# Starting command 19
+} Place the large red rectangle anywhere but near the garbage
+> Move the large red rectangle near the garbage
+} Place the small red arch near the table
+> The small red arch is near the table
 > Finished 
 } Remove demo objects
-> The goal is the large green triangle near the pantry
-> Pick up the large green triangle
-> Put the large green triangle near pantry
-> You are done.
-# Starting command 11
-} Place the large green triangle anywhere but to the left of the garbage
-> Move the large green triangle to the left of the garbage
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the left of the garbage
-> Pick up the large green triangle
-> Put the large green triangle to the left of garbage
-> You are done.
-# Starting command 12
-} Place the large yellow rectangle anywhere but to the right of the pantry
-> Move the large yellow rectangle to the right of the pantry
 > large is a size.
 > rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
+> red is a color.
+} Select the large red rectangle
 > This is large
 > This is a rectangle
-> This is yellow
+> This is red
 > Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
+} Place the small red arch near the table
+> The small red arch is near the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow rectangle to the right of the pantry
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle to the right of pantry
+> The goal is the large red rectangle near the garbage
+> Pick up the large red rectangle
+> Put the large red rectangle near the garbage
 > You are done.
-# Starting command 13
-} Place the large yellow arch anywhere but to the left of the pantry
-> Move the large yellow arch to the left of the pantry
+# Starting command 20
+} Place the small blue triangle in the pantry
+> Store the small blue triangle
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+> The goal is the small blue triangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue triangle
+> Put the small blue triangle in the pantry
+> You are done.
+# Starting command 21
+} Place the large blue arch in the pantry
+> Store the large blue arch
 > arch is a shape.
+> blue is a color.
 > large is a size.
-> yellow is a color.
-} Select the large yellow arch
+} Select the large blue arch
 > This is large
 > This is a arch
-> This is yellow
+> This is blue
 > Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
+> The goal is the large blue arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow arch to the left of the pantry
-> Pick up the large yellow arch
-> Put the large yellow arch to the left of pantry
+> Pick up the large blue arch
+> Put the large blue arch in the pantry
 > You are done.
-# Starting command 14
+# Starting command 22
+} Place the large blue arch anywhere but to the left of the stove
+> Move the large blue arch to the left of the stove
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large blue arch to the left of the stove
+> Pick up the large blue arch
+> Put the large blue arch to the left of the stove
+> You are done.
+# Starting command 23
+} Place the small green arch anywhere but to the right of the garbage
+> Move the small green arch to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small green arch to the right of the garbage
+> Pick up the small green arch
+> Put the small green arch to the right of the garbage
+> You are done.
+# Starting command 24
+} Place the small red rectangle in the garbage
+> Discard the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
+> You are done.
+# Starting command 25
+} Place the small green triangle in the garbage
+> Discard the small green triangle
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
+> This is a triangle
+> This is green
+> Finished. 
+> The goal is the small green triangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green triangle
+> Put the small green triangle in the garbage
+> You are done.
+# Starting command 26
+} Place the small blue rectangle anywhere but to the garbage
+> Move the small blue rectangle to the garbage
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+> The goal is the small blue rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue rectangle
+> Put the small blue rectangle in the garbage
+> You are done.
+# Starting command 27
+} Place the large red triangle in the pantry
+> Store the large red triangle
+> large is a size.
+> red is a color.
+> triangle is a shape.
+} Select the large red triangle
+> This is large
+> This is a triangle
+> This is red
+> Finished. 
+> The goal is the large red triangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large red triangle
+> Put the large red triangle in the pantry
+> You are done.
+# Starting command 28
+} Place the large red triangle in the garbage
 > Discard the large red triangle
 > large is a size.
 > red is a color.
@@ -1223,34 +613,62 @@ Start trial 1
 > This is red
 > Finished. 
 > The goal is the large red triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
 > Pick up the large red triangle
 > Put the large red triangle in the garbage
 > You are done.
-# Starting command 15
-} Place the large yellow triangle anywhere but to the garbage
-> Move the large yellow triangle to the garbage
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
+# Starting command 29
+} Place the small green rectangle in the garbage
+> Discard the small green rectangle
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
 > Finished. 
-> The goal is the large yellow triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small green rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large yellow triangle
-> Put the large yellow triangle in garbage
+> Pick up the small green rectangle
+> Put the small green rectangle in the garbage
 > You are done.
-# Starting command 16
-> Store the large red triangle
+# Starting command 30
+} Place the large red arch anywhere but near the pantry
+> Move the large red arch near the pantry
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the large red arch near the pantry
+> Pick up the large red arch
+> Put the large red arch near the pantry
+> You are done.
+# Starting command 31
+} Place the large red triangle anywhere but to the right of the pantry
+> Move the large red triangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
 > large is a size.
 > red is a color.
 > triangle is a shape.
@@ -1259,88 +677,359 @@ Start trial 1
 > This is a triangle
 > This is red
 > Finished. 
-> The goal is the large red triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
+> The goal is the large red triangle to the right of the pantry
 > Pick up the large red triangle
-> Put the large red triangle in the pantry
+> Put the large red triangle to the right of the pantry
 > You are done.
-# Starting command 17
-> Store the large green triangle
+# Starting command 32
+} Place the small blue rectangle in the garbage
+> Discard the small blue rectangle
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+> The goal is the small blue rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue rectangle
+> Put the small blue rectangle in the garbage
+> You are done.
+# Starting command 33
+} Place the small green rectangle anywhere but to the right of the pantry
+> Move the small green rectangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
 > green is a color.
-> large is a size.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small green rectangle to the right of the pantry
+> Pick up the small green rectangle
+> Put the small green rectangle to the right of the pantry
+> You are done.
+# Starting command 34
+} Place the small green arch in the pantry
+> Store the small green arch
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green arch
+> Put the small green arch in the pantry
+> You are done.
+# Starting command 35
+} Place the small green arch anywhere but to the garbage
+> Move the small green arch to the garbage
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the small green arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green arch
+> Put the small green arch in the garbage
+> You are done.
+# Starting command 36
+} Place the small green triangle anywhere but to the table
+> Move the small green triangle to the table
+> green is a color.
+> small is a size.
 > triangle is a shape.
-} Select the large green triangle
-> This is large
+} Select the small green triangle
+> This is small
 > This is a triangle
 > This is green
 > Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small green triangle in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the pantry
+> Pick up the small green triangle
+> Put the small green triangle in the table
 > You are done.
-# Starting command 18
-> Discard the large green triangle
+# Starting command 37
+} Place the small green triangle anywhere but to the left of the pantry
+> Move the small green triangle to the left of the pantry
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
 > green is a color.
-> large is a size.
+> small is a size.
 > triangle is a shape.
-} Select the large green triangle
-> This is large
+} Select the small green triangle
+> This is small
 > This is a triangle
 > This is green
 > Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
+> The goal is the small green triangle to the left of the pantry
+> Pick up the small green triangle
+> Put the small green triangle to the left of the pantry
 > You are done.
-# Starting command 19
-> Store the large red triangle
-> large is a size.
+# Starting command 38
+} Place the small blue triangle anywhere but to the right of the pantry
+> Move the small blue triangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the right of the pantry
+> Pick up the small blue triangle
+> Put the small blue triangle to the right of the pantry
+> You are done.
+# Starting command 39
+} Place the small red rectangle anywhere but to the stove
+> Move the small red rectangle to the stove
+> rectangle is a shape.
 > red is a color.
-> triangle is a shape.
-} Select the large red triangle
-> This is large
-> This is a triangle
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
 > This is red
 > Finished. 
-> The goal is the large red triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small red rectangle in the stove
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large red triangle
-> Put the large red triangle in the pantry
+> Pick up the small red rectangle
+> Put the small red rectangle in the stove
 > You are done.
-# Starting command 20
-} Place the large green triangle anywhere but to the right of the garbage
-> Move the large green triangle to the right of the garbage
-> green is a color.
+# Starting command 40
+} Place the large blue arch in the garbage
+> Discard the large blue arch
+> arch is a shape.
+> blue is a color.
 > large is a size.
-> triangle is a shape.
-} Select the large green triangle
+} Select the large blue arch
 > This is large
+> This is a arch
+> This is blue
+> Finished. 
+> The goal is the large blue arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large blue arch
+> Put the large blue arch in the garbage
+> You are done.
+# Starting command 41
+} Place the small green triangle in the garbage
+> Discard the small green triangle
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
 > This is a triangle
 > This is green
 > Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
+> The goal is the small green triangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large green triangle to the right of the garbage
-> Pick up the large green triangle
-> Put the large green triangle to the right of garbage
+> Pick up the small green triangle
+> Put the small green triangle in the garbage
 > You are done.
-# Starting command 21
+# Starting command 42
+} Place the large green arch in the pantry
+> Store the large green arch
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the large green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green arch
+> Put the large green arch in the pantry
+> You are done.
+# Starting command 43
+} Place the small red rectangle in the garbage
+> Discard the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
+> You are done.
+# Starting command 44
+} Place the large blue arch in the garbage
+> Discard the large blue arch
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+> The goal is the large blue arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large blue arch
+> Put the large blue arch in the garbage
+> You are done.
+# Starting command 45
+} Place the small blue rectangle anywhere but to the right of the garbage
+> Move the small blue rectangle to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle to the right of the garbage
+> Pick up the small blue rectangle
+> Put the small blue rectangle to the right of the garbage
+> You are done.
+# Starting command 46
+} Place the small blue rectangle anywhere but near the garbage
+> Move the small blue rectangle near the garbage
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle near the garbage
+> Pick up the small blue rectangle
+> Put the small blue rectangle near the garbage
+> You are done.
+# Starting command 47
+} Place the large green rectangle in the garbage
+> Discard the large green rectangle
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+> The goal is the large green rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Starting command 48
+} Place the small green triangle anywhere but to the table
+> Move the small green triangle to the table
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
+> This is a triangle
+> This is green
+> Finished. 
+> The goal is the small green triangle in the table
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green triangle
+> Put the small green triangle in the table
+> You are done.
+# Starting command 49
+} Place the large green rectangle in the pantry
 > Store the large green rectangle
 > green is a color.
 > large is a size.
@@ -1351,52 +1040,102 @@ Start trial 1
 > This is green
 > Finished. 
 > The goal is the large green rectangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
 > Pick up the large green rectangle
 > Put the large green rectangle in the pantry
 > You are done.
-# Starting command 22
-> Store the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+# Start trial 1
+} rearrange objects 
+# Starting command 0
+} Place the large green rectangle anywhere but to the right of the garbage
+> Move the large green rectangle to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the pantry
-> You are done.
-# Starting command 23
-> Store the large green triangle
 > green is a color.
 > large is a size.
-> triangle is a shape.
-} Select the large green triangle
+> rectangle is a shape.
+} Select the large green rectangle
 > This is large
-> This is a triangle
+> This is a rectangle
 > This is green
 > Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the pantry
+> The goal is the large green rectangle to the right of the garbage
+> Pick up the large green rectangle
+> Put the large green rectangle to the right of the garbage
 > You are done.
-# Starting command 24
-} Place the large red arch anywhere but near the garbage
-> Move the large red arch near the garbage
+# Starting command 1
+} Place the small green arch in the pantry
+> Store the small green arch
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green arch
+> Put the small green arch in the pantry
+> You are done.
+# Starting command 2
+} Place the small green rectangle in the pantry
+> Store the small green rectangle
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
+> Finished. 
+> The goal is the small green rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green rectangle
+> Put the small green rectangle in the pantry
+> You are done.
+# Starting command 3
+} Place the small blue rectangle anywhere but near the garbage
+> Move the small blue rectangle near the garbage
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle near the garbage
+> Pick up the small blue rectangle
+> Put the small blue rectangle near the garbage
+> You are done.
+# Starting command 4
+} Place the large red arch anywhere but to the garbage
+> Move the large red arch to the garbage
 > arch is a shape.
 > large is a size.
 > red is a color.
@@ -1405,485 +1144,1216 @@ Start trial 1
 > This is a arch
 > This is red
 > Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
+> The goal is the large red arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large red arch near the garbage
 > Pick up the large red arch
-> Put the large red arch near garbage
+> Put the large red arch in the garbage
+> You are done.
+# Starting command 5
+} Place the small red rectangle in the pantry
+> Store the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the pantry
+> You are done.
+# Starting command 6
+} Place the large green rectangle anywhere but to the left of the garbage
+> Move the large green rectangle to the left of the garbage
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green rectangle to the left of the garbage
+> Pick up the large green rectangle
+> Put the large green rectangle to the left of the garbage
+> You are done.
+# Starting command 7
+} Place the small red rectangle in the pantry
+> Store the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the pantry
+> You are done.
+# Starting command 8
+} Place the large red rectangle anywhere but to the left of the table
+> Move the large red rectangle to the left of the table
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> large is a size.
+> rectangle is a shape.
+> red is a color.
+} Select the large red rectangle
+> This is large
+> This is a rectangle
+> This is red
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large red rectangle to the left of the table
+> Pick up the large red rectangle
+> Put the large red rectangle to the left of the table
+> You are done.
+# Starting command 9
+} Place the large blue arch anywhere but to the stove
+> Move the large blue arch to the stove
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+> The goal is the large blue arch in the stove
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large blue arch
+> Put the large blue arch in the stove
+> You are done.
+# Starting command 10
+} Place the large red arch anywhere but to the right of the stove
+> Move the large red arch to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large red arch to the right of the stove
+> Pick up the large red arch
+> Put the large red arch to the right of the stove
+> You are done.
+# Starting command 11
+} Place the large red arch anywhere but to the right of the garbage
+> Move the large red arch to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large red arch to the right of the garbage
+> Pick up the large red arch
+> Put the large red arch to the right of the garbage
+> You are done.
+# Starting command 12
+} Place the large green rectangle in the pantry
+> Store the large green rectangle
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+> The goal is the large green rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green rectangle
+> Put the large green rectangle in the pantry
+> You are done.
+# Starting command 13
+} Place the small blue triangle anywhere but to the right of the pantry
+> Move the small blue triangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the right of the pantry
+> Pick up the small blue triangle
+> Put the small blue triangle to the right of the pantry
+> You are done.
+# Starting command 14
+} Place the small blue rectangle anywhere but near the stove
+> Move the small blue rectangle near the stove
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle near the stove
+> Pick up the small blue rectangle
+> Put the small blue rectangle near the stove
+> You are done.
+# Starting command 15
+} Place the large green arch anywhere but to the pantry
+> Move the large green arch to the pantry
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the large green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green arch
+> Put the large green arch in the pantry
+> You are done.
+# Starting command 16
+} Place the small red rectangle in the garbage
+> Discard the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
+> You are done.
+# Starting command 17
+} Place the large green arch anywhere but to the right of the stove
+> Move the large green arch to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green arch to the right of the stove
+> Pick up the large green arch
+> Put the large green arch to the right of the stove
+> You are done.
+# Starting command 18
+} Place the small blue rectangle anywhere but near the pantry
+> Move the small blue rectangle near the pantry
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle near the pantry
+> Pick up the small blue rectangle
+> Put the small blue rectangle near the pantry
+> You are done.
+# Starting command 19
+} Place the small green triangle anywhere but to the stove
+> Move the small green triangle to the stove
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
+> This is a triangle
+> This is green
+> Finished. 
+> The goal is the small green triangle in the stove
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green triangle
+> Put the small green triangle in the stove
+> You are done.
+# Starting command 20
+} Place the large green rectangle anywhere but near the pantry
+> Move the large green rectangle near the pantry
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the large green rectangle near the pantry
+> Pick up the large green rectangle
+> Put the large green rectangle near the pantry
+> You are done.
+# Starting command 21
+} Place the large blue arch anywhere but to the pantry
+> Move the large blue arch to the pantry
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+> The goal is the large blue arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large blue arch
+> Put the large blue arch in the pantry
+> You are done.
+# Starting command 22
+} Place the small green arch anywhere but near the garbage
+> Move the small green arch near the garbage
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small green arch near the garbage
+> Pick up the small green arch
+> Put the small green arch near the garbage
+> You are done.
+# Starting command 23
+} Place the small blue triangle anywhere but to the right of the stove
+> Move the small blue triangle to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the right of the stove
+> Pick up the small blue triangle
+> Put the small blue triangle to the right of the stove
+> You are done.
+# Starting command 24
+} Place the small red rectangle anywhere but to the right of the pantry
+> Move the small red rectangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small red rectangle to the right of the pantry
+> Pick up the small red rectangle
+> Put the small red rectangle to the right of the pantry
 > You are done.
 # Starting command 25
-} Place the small yellow arch anywhere but to the pantry
-> Move the small yellow arch to the pantry
-> arch is a shape.
+} Place the small red rectangle in the garbage
+> Discard the small red rectangle
+> rectangle is a shape.
+> red is a color.
 > small is a size.
-> yellow is a color.
-} Select the small yellow arch
+} Select the small red rectangle
 > This is small
-> This is a arch
-> This is yellow
+> This is a rectangle
+> This is red
 > Finished. 
-> The goal is the small yellow arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the small yellow arch
-> Put the small yellow arch in pantry
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
 > You are done.
 # Starting command 26
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small green rectangle anywhere but to the right of the stove
+> Move the small green rectangle to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small green rectangle to the right of the stove
+> Pick up the small green rectangle
+> Put the small green rectangle to the right of the stove
 > You are done.
 # Starting command 27
-> Store the small red arch
-> arch is a shape.
-> red is a color.
+} Place the small blue triangle in the pantry
+> Store the small blue triangle
+> blue is a color.
 > small is a size.
-} Select the small red arch
+> triangle is a shape.
+} Select the small blue triangle
 > This is small
-> This is a arch
-> This is red
+> This is a triangle
+> This is blue
 > Finished. 
-> The goal is the small red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small blue triangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the pantry
+> Pick up the small blue triangle
+> Put the small blue triangle in the pantry
 > You are done.
 # Starting command 28
-> Discard the large red triangle
-> large is a size.
-> red is a color.
-> triangle is a shape.
-} Select the large red triangle
-> This is large
-> This is a triangle
-> This is red
+} Place the small green rectangle in the pantry
+> Store the small green rectangle
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
 > Finished. 
-> The goal is the large red triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small green rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large red triangle
-> Put the large red triangle in the garbage
+> Pick up the small green rectangle
+> Put the small green rectangle in the pantry
 > You are done.
 # Starting command 29
-} Place the large yellow rectangle anywhere but to the left of the pantry
-> Move the large yellow rectangle to the left of the pantry
-> large is a size.
+} Place the small red rectangle anywhere but to the garbage
+> Move the small red rectangle to the garbage
 > rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
 > This is a rectangle
-> This is yellow
+> This is red
 > Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow rectangle to the left of the pantry
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle to the left of pantry
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
 > You are done.
 # Starting command 30
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the large green rectangle anywhere but to the left of the stove
+> Move the large green rectangle to the left of the stove
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green rectangle to the left of the stove
+> Pick up the large green rectangle
+> Put the large green rectangle to the left of the stove
 > You are done.
 # Starting command 31
-} Place the small red arch anywhere but to the right of the garbage
-> Move the small red arch to the right of the garbage
+} Place the large green arch in the garbage
+> Discard the large green arch
 > arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the right of the garbage
-> Pick up the small red arch
-> Put the small red arch to the right of garbage
-> You are done.
-# Starting command 32
-} Place the large yellow rectangle anywhere but near the dishwasher
-> Move the large yellow rectangle near the dishwasher
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow rectangle near the dishwasher
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle near dishwasher
-> You are done.
-# Starting command 33
-} Place the large yellow rectangle anywhere but to the right of the garbage
-> Move the large yellow rectangle to the right of the garbage
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow rectangle to the right of the garbage
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle to the right of garbage
-> You are done.
-# Starting command 34
-} Place the large yellow arch anywhere but to the pantry
-> Move the large yellow arch to the pantry
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the large yellow arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in pantry
-> You are done.
-# Starting command 35
-} Place the small red arch anywhere but near the pantry
-> Move the small red arch near the pantry
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch near the pantry
-> Pick up the small red arch
-> Put the small red arch near pantry
-> You are done.
-# Starting command 36
-} Place the small red arch anywhere but to the dishwasher
-> Move the small red arch to the dishwasher
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the dishwasher
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in dishwasher
-> You are done.
-# Starting command 37
-} Place the large yellow triangle anywhere but to the left of the dishwasher
-> Move the large yellow triangle to the left of the dishwasher
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow triangle to the left of the dishwasher
-> Pick up the large yellow triangle
-> Put the large yellow triangle to the left of dishwasher
-> You are done.
-# Starting command 38
-> Store the large yellow triangle
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow triangle
-> Put the large yellow triangle in the pantry
-> You are done.
-# Starting command 39
-> Discard the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the garbage
-> You are done.
-# Starting command 40
-> Store the large red triangle
-> large is a size.
-> red is a color.
-> triangle is a shape.
-} Select the large red triangle
-> This is large
-> This is a triangle
-> This is red
-> Finished. 
-> The goal is the large red triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large red triangle
-> Put the large red triangle in the pantry
-> You are done.
-# Starting command 41
-} Place the large yellow arch anywhere but to the right of the garbage
-> Move the large yellow arch to the right of the garbage
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow arch to the right of the garbage
-> Pick up the large yellow arch
-> Put the large yellow arch to the right of garbage
-> You are done.
-# Starting command 42
-} Place the small red arch anywhere but to the right of the table
-> Move the small red arch to the right of the table
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the right of the table
-> Pick up the small red arch
-> Put the small red arch to the right of table
-> You are done.
-# Starting command 43
-} Place the large yellow triangle anywhere but to the left of the garbage
-> Move the large yellow triangle to the left of the garbage
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow triangle to the left of the garbage
-> Pick up the large yellow triangle
-> Put the large yellow triangle to the left of garbage
-> You are done.
-# Starting command 44
-} Place the small red arch anywhere but to the right of the garbage
-> Move the small red arch to the right of the garbage
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the small red arch to the right of the garbage
-> Pick up the small red arch
-> Put the small red arch to the right of garbage
-> You are done.
-# Starting command 45
-} Place the large yellow arch anywhere but to the left of the garbage
-> Move the large yellow arch to the left of the garbage
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow arch to the left of the garbage
-> Pick up the large yellow arch
-> Put the large yellow arch to the left of garbage
-> You are done.
-# Starting command 46
-} Place the large green triangle anywhere but to the garbage
-> Move the large green triangle to the garbage
 > green is a color.
 > large is a size.
-> triangle is a shape.
-} Select the large green triangle
+} Select the large green arch
 > This is large
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the large green arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green arch
+> Put the large green arch in the garbage
+> You are done.
+# Starting command 32
+} Place the small green arch in the pantry
+> Store the small green arch
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green arch
+> Put the small green arch in the pantry
+> You are done.
+# Starting command 33
+} Place the large green rectangle anywhere but to the right of the stove
+> Move the large green rectangle to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green rectangle to the right of the stove
+> Pick up the large green rectangle
+> Put the large green rectangle to the right of the stove
+> You are done.
+# Starting command 34
+} Place the small green arch anywhere but to the right of the table
+> Move the small green arch to the right of the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small green arch to the right of the table
+> Pick up the small green arch
+> Put the small green arch to the right of the table
+> You are done.
+# Starting command 35
+} Place the small green arch in the pantry
+> Store the small green arch
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green arch
+> Put the small green arch in the pantry
+> You are done.
+# Starting command 36
+} Place the small blue triangle anywhere but to the right of the pantry
+> Move the small blue triangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the right of the pantry
+> Pick up the small blue triangle
+> Put the small blue triangle to the right of the pantry
+> You are done.
+# Starting command 37
+} Place the small blue rectangle anywhere but to the table
+> Move the small blue rectangle to the table
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+> The goal is the small blue rectangle in the table
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue rectangle
+> Put the small blue rectangle in the table
+> You are done.
+# Starting command 38
+} Place the small blue rectangle in the garbage
+> Discard the small blue rectangle
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+> The goal is the small blue rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue rectangle
+> Put the small blue rectangle in the garbage
+> You are done.
+# Starting command 39
+} Place the small red rectangle anywhere but near the pantry
+> Move the small red rectangle near the pantry
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small red rectangle near the pantry
+> Pick up the small red rectangle
+> Put the small red rectangle near the pantry
+> You are done.
+# Starting command 40
+} Place the small red rectangle in the garbage
+> Discard the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
+> You are done.
+# Starting command 41
+} Place the large green arch in the garbage
+> Discard the large green arch
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the large green arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green arch
+> Put the large green arch in the garbage
+> You are done.
+# Starting command 42
+} Place the small red rectangle anywhere but to the garbage
+> Move the small red rectangle to the garbage
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
+> You are done.
+# Starting command 43
+} Place the small blue rectangle anywhere but to the right of the pantry
+> Move the small blue rectangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle to the right of the pantry
+> Pick up the small blue rectangle
+> Put the small blue rectangle to the right of the pantry
+> You are done.
+# Starting command 44
+} Place the small green triangle in the pantry
+> Store the small green triangle
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
 > This is a triangle
 > This is green
 > Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small green triangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in garbage
+> Pick up the small green triangle
+> Put the small green triangle in the pantry
+> You are done.
+# Starting command 45
+} Place the small blue triangle anywhere but to the right of the garbage
+> Move the small blue triangle to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the right of the garbage
+> Pick up the small blue triangle
+> Put the small blue triangle to the right of the garbage
+> You are done.
+# Starting command 46
+} Place the large green arch anywhere but to the left of the garbage
+> Move the large green arch to the left of the garbage
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green arch to the left of the garbage
+> Pick up the large green arch
+> Put the large green arch to the left of the garbage
 > You are done.
 # Starting command 47
-} Place the large yellow arch anywhere but to the left of the garbage
-> Move the large yellow arch to the left of the garbage
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
+} Place the small blue rectangle anywhere but near the pantry
+> Move the small blue rectangle near the pantry
+} Place the small red arch near the table
+> The small red arch is near the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow arch to the left of the garbage
-> Pick up the large yellow arch
-> Put the large yellow arch to the left of garbage
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle near the pantry
+> Pick up the small blue rectangle
+> Put the small blue rectangle near the pantry
 > You are done.
 # Starting command 48
-} Place the large yellow arch anywhere but to the right of the dishwasher
-> Move the large yellow arch to the right of the dishwasher
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
+} Place the small green rectangle in the pantry
+> Store the small green rectangle
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
 > Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
+> The goal is the small green rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow arch to the right of the dishwasher
-> Pick up the large yellow arch
-> Put the large yellow arch to the right of dishwasher
+> Pick up the small green rectangle
+> Put the small green rectangle in the pantry
 > You are done.
 # Starting command 49
-} Place the small red arch anywhere but near the garbage
-> Move the small red arch near the garbage
-> arch is a shape.
-> red is a color.
+} Place the small blue rectangle anywhere but to the right of the pantry
+> Move the small blue rectangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
 > small is a size.
-} Select the small red arch
+} Select the small blue rectangle
 > This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle to the right of the pantry
+> Pick up the small blue rectangle
+> Put the small blue rectangle to the right of the pantry
+> You are done.
+# Start trial 2
+} rearrange objects 
+# Starting command 0
+} Place the large red arch anywhere but near the table
+> Move the large red arch near the table
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
 > This is a arch
 > This is red
 > Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
+} Place the small red arch near the table
+> The small red arch is near the table
 > Finished 
 } Remove demo objects
-> The goal is the small red arch near the garbage
-> Pick up the small red arch
-> Put the small red arch near garbage
+> The goal is the large red arch near the table
+> Pick up the large red arch
+> Put the large red arch near the table
 > You are done.
-Start trial 2
-} rearrange objects 
-# Starting command 0
+# Starting command 1
+} Place the small blue rectangle anywhere but to the left of the table
+> Move the small blue rectangle to the left of the table
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle to the left of the table
+> Pick up the small blue rectangle
+> Put the small blue rectangle to the left of the table
+> You are done.
+# Starting command 2
+} Place the small blue triangle anywhere but to the right of the stove
+> Move the small blue triangle to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the right of the stove
+> Pick up the small blue triangle
+> Put the small blue triangle to the right of the stove
+> You are done.
+# Starting command 3
+} Place the large red arch anywhere but to the pantry
+> Move the large red arch to the pantry
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+> The goal is the large red arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large red arch
+> Put the large red arch in the pantry
+> You are done.
+# Starting command 4
+} Place the large red arch in the garbage
+> Discard the large red arch
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+> The goal is the large red arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large red arch
+> Put the large red arch in the garbage
+> You are done.
+# Starting command 5
+} Place the small blue triangle anywhere but to the table
+> Move the small blue triangle to the table
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+> The goal is the small blue triangle in the table
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small blue triangle
+> Put the small blue triangle in the table
+> You are done.
+# Starting command 6
+} Place the small red rectangle in the pantry
+> Store the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the pantry
+> You are done.
+# Starting command 7
+} Place the large green arch anywhere but to the right of the garbage
+> Move the large green arch to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green arch to the right of the garbage
+> Pick up the large green arch
+> Put the large green arch to the right of the garbage
+> You are done.
+# Starting command 8
+} Place the large red arch in the garbage
+> Discard the large red arch
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+> The goal is the large red arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large red arch
+> Put the large red arch in the garbage
+> You are done.
+# Starting command 9
+} Place the large green arch anywhere but to the right of the stove
+> Move the large green arch to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green arch to the right of the stove
+> Pick up the large green arch
+> Put the large green arch to the right of the stove
+> You are done.
+# Starting command 10
+} Place the large green rectangle in the garbage
+> Discard the large green rectangle
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+> The goal is the large green rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Starting command 11
+} Place the large green arch anywhere but to the right of the garbage
+> Move the large green arch to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large green arch to the right of the garbage
+> Pick up the large green arch
+> Put the large green arch to the right of the garbage
+> You are done.
+# Starting command 12
 } Place the large red arch anywhere but to the table
 > Move the large red arch to the table
 > arch is a shape.
@@ -1895,238 +2365,16 @@ Start trial 2
 > This is red
 > Finished. 
 > The goal is the large red arch in the table
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
 > Pick up the large red arch
-> Put the large red arch in table
-> You are done.
-# Starting command 1
-> Discard the small red arch
-> arch is a shape.
-> red is a color.
-> small is a size.
-} Select the small red arch
-> This is small
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the garbage
-> You are done.
-# Starting command 2
-} Place the large green rectangle anywhere but to the pantry
-> Move the large green rectangle to the pantry
-> green is a color.
-> large is a size.
-> rectangle is a shape.
-} Select the large green rectangle
-> This is large
-> This is a rectangle
-> This is green
-> Finished. 
-> The goal is the large green rectangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green rectangle
-> Put the large green rectangle in pantry
-> You are done.
-# Starting command 3
-} Place the large green rectangle anywhere but to the left of the garbage
-> Move the large green rectangle to the left of the garbage
-> green is a color.
-> large is a size.
-> rectangle is a shape.
-} Select the large green rectangle
-> This is large
-> This is a rectangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green rectangle to the left of the garbage
-> Pick up the large green rectangle
-> Put the large green rectangle to the left of garbage
-> You are done.
-# Starting command 4
-} Place the large green triangle anywhere but to the right of the table
-> Move the large green triangle to the right of the table
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the right of the table
-> Pick up the large green triangle
-> Put the large green triangle to the right of table
-> You are done.
-# Starting command 5
-> Store the large yellow arch
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the large yellow arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in the pantry
-> You are done.
-# Starting command 6
-> Discard the large yellow arch
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the large yellow arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in the garbage
-> You are done.
-# Starting command 7
-> Store the large yellow arch
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the large yellow arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in the pantry
-> You are done.
-# Starting command 8
-} Place the large yellow triangle anywhere but to the right of the table
-> Move the large yellow triangle to the right of the table
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow triangle to the right of the table
-> Pick up the large yellow triangle
-> Put the large yellow triangle to the right of table
-> You are done.
-# Starting command 9
-> Discard the large yellow rectangle
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow rectangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle in the garbage
-> You are done.
-# Starting command 10
-} Place the small yellow arch anywhere but to the table
-> Move the small yellow arch to the table
-> arch is a shape.
-> small is a size.
-> yellow is a color.
-} Select the small yellow arch
-> This is small
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the small yellow arch in the table
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small yellow arch
-> Put the small yellow arch in table
-> You are done.
-# Starting command 11
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
-> You are done.
-# Starting command 12
-} Place the large yellow rectangle anywhere but to the left of the garbage
-> Move the large yellow rectangle to the left of the garbage
-> large is a size.
-> rectangle is a shape.
-> yellow is a color.
-} Select the large yellow rectangle
-> This is large
-> This is a rectangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow rectangle to the left of the garbage
-> Pick up the large yellow rectangle
-> Put the large yellow rectangle to the left of garbage
+> Put the large red arch in the table
 > You are done.
 # Starting command 13
-} Place the large green rectangle anywhere but to the right of the pantry
-> Move the large green rectangle to the right of the pantry
+} Place the large green rectangle in the garbage
+> Discard the large green rectangle
 > green is a color.
 > large is a size.
 > rectangle is a shape.
@@ -2135,276 +2383,59 @@ Start trial 2
 > This is a rectangle
 > This is green
 > Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
+> The goal is the large green rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the large green rectangle to the right of the pantry
 > Pick up the large green rectangle
-> Put the large green rectangle to the right of pantry
+> Put the large green rectangle in the garbage
 > You are done.
 # Starting command 14
-> Store the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the pantry
-> You are done.
-# Starting command 15
-} Place the large yellow arch anywhere but to the pantry
-> Move the large yellow arch to the pantry
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-> The goal is the large yellow arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in pantry
-> You are done.
-# Starting command 16
-> Store the large yellow triangle
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow triangle
-> Put the large yellow triangle in the pantry
-> You are done.
-# Starting command 17
-} Place the large yellow triangle anywhere but near the pantry
-> Move the large yellow triangle near the pantry
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow triangle near the pantry
-> Pick up the large yellow triangle
-> Put the large yellow triangle near pantry
-> You are done.
-# Starting command 18
-> Discard the large yellow triangle
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow triangle
-> Put the large yellow triangle in the garbage
-> You are done.
-# Starting command 19
-} Place the large green triangle anywhere but to the left of the garbage
-> Move the large green triangle to the left of the garbage
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the left of the garbage
-> Pick up the large green triangle
-> Put the large green triangle to the left of garbage
-> You are done.
-# Starting command 20
-> Discard the large red triangle
-> large is a size.
+} Place the small red rectangle in the garbage
+> Discard the small red rectangle
+> rectangle is a shape.
 > red is a color.
-> triangle is a shape.
-} Select the large red triangle
-> This is large
-> This is a triangle
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
 > This is red
 > Finished. 
-> The goal is the large red triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small red rectangle in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large red triangle
-> Put the large red triangle in the garbage
+> Pick up the small red rectangle
+> Put the small red rectangle in the garbage
 > You are done.
-# Starting command 21
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+# Starting command 15
+} Place the small red rectangle anywhere but to the right of the stove
+> Move the small red rectangle to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
-> You are done.
-# Starting command 22
-} Place the large yellow arch anywhere but to the left of the dishwasher
-> Move the large yellow arch to the left of the dishwasher
-> arch is a shape.
-> large is a size.
-> yellow is a color.
-} Select the large yellow arch
-> This is large
-> This is a arch
-> This is yellow
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large yellow arch to the left of the dishwasher
-> Pick up the large yellow arch
-> Put the large yellow arch to the left of dishwasher
-> You are done.
-# Starting command 23
-} Place the small yellow arch anywhere but to the garbage
-> Move the small yellow arch to the garbage
-> arch is a shape.
+> rectangle is a shape.
+> red is a color.
 > small is a size.
-> yellow is a color.
-} Select the small yellow arch
+} Select the small red rectangle
 > This is small
-> This is a arch
-> This is yellow
+> This is a rectangle
+> This is red
 > Finished. 
-> The goal is the small yellow arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the small yellow arch
-> Put the small yellow arch in garbage
+> The goal is the small red rectangle to the right of the stove
+> Pick up the small red rectangle
+> Put the small red rectangle to the right of the stove
 > You are done.
-# Starting command 24
-} Place the large green triangle anywhere but to the right of the table
-> Move the large green triangle to the right of the table
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the right of the table
-> Pick up the large green triangle
-> Put the large green triangle to the right of table
-> You are done.
-# Starting command 25
-} Place the large green triangle anywhere but near the pantry
-> Move the large green triangle near the pantry
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle near the small blue circle
-> The small red circle is near the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle near the pantry
-> Pick up the large green triangle
-> Put the large green triangle near pantry
-> You are done.
-# Starting command 26
-> Store the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the pantry
-> You are done.
-# Starting command 27
-} Place the large green triangle anywhere but to the right of the table
-> Move the large green triangle to the right of the table
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the right of the table
-> Pick up the large green triangle
-> Put the large green triangle to the right of table
-> You are done.
-# Starting command 28
-> Discard the large red arch
+# Starting command 16
+} Place the large red arch anywhere but to the garbage
+> Move the large red arch to the garbage
 > arch is a shape.
 > large is a size.
 > red is a color.
@@ -2414,106 +2445,119 @@ Start trial 2
 > This is red
 > Finished. 
 > The goal is the large red arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
 > Pick up the large red arch
 > Put the large red arch in the garbage
 > You are done.
-# Starting command 29
-> Store the large green triangle
-> green is a color.
+# Starting command 17
+} Place the large blue arch in the garbage
+> Discard the large blue arch
+> arch is a shape.
+> blue is a color.
 > large is a size.
-> triangle is a shape.
-} Select the large green triangle
+} Select the large blue arch
 > This is large
-> This is a triangle
-> This is green
+> This is a arch
+> This is blue
 > Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the large blue arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the pantry
+> Pick up the large blue arch
+> Put the large blue arch in the garbage
 > You are done.
-# Starting command 30
-> Store the small red arch
-> arch is a shape.
+# Starting command 18
+} Place the large red rectangle anywhere but to the table
+> Move the large red rectangle to the table
+> large is a size.
+> rectangle is a shape.
 > red is a color.
+} Select the large red rectangle
+> This is large
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the large red rectangle in the table
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large red rectangle
+> Put the large red rectangle in the table
+> You are done.
+# Starting command 19
+} Place the small blue rectangle anywhere but to the right of the garbage
+> Move the small blue rectangle to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
 > small is a size.
-} Select the small red arch
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle to the right of the garbage
+> Pick up the small blue rectangle
+> Put the small blue rectangle to the right of the garbage
+> You are done.
+# Starting command 20
+} Place the large green rectangle anywhere but to the table
+> Move the large green rectangle to the table
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+> The goal is the large green rectangle in the table
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green rectangle
+> Put the large green rectangle in the table
+> You are done.
+# Starting command 21
+} Place the small green arch in the pantry
+> Store the small green arch
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
 > This is small
 > This is a arch
-> This is red
-> Finished. 
-> The goal is the small red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small red arch
-> Put the small red arch in the pantry
-> You are done.
-# Starting command 31
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
 > This is green
 > Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
+> Pick up the small green arch
+> Put the small green arch in the pantry
 > You are done.
-# Starting command 32
-> Store the large red arch
-> arch is a shape.
-> large is a size.
-> red is a color.
-} Select the large red arch
-> This is large
-> This is a arch
-> This is red
-> Finished. 
-> The goal is the large red arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+# Starting command 22
+} Place the large red triangle anywhere but to the right of the garbage
+> Move the large red triangle to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the large red arch
-> Put the large red arch in the pantry
-> You are done.
-# Starting command 33
-> Discard the large yellow triangle
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-> The goal is the large yellow triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large yellow triangle
-> Put the large yellow triangle in the garbage
-> You are done.
-# Starting command 34
-} Place the large red triangle anywhere but to the left of the pantry
-> Move the large red triangle to the left of the pantry
 > large is a size.
 > red is a color.
 > triangle is a shape.
@@ -2522,107 +2566,165 @@ Start trial 2
 > This is a triangle
 > This is red
 > Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> The goal is the large red triangle to the left of the pantry
+> The goal is the large red triangle to the right of the garbage
 > Pick up the large red triangle
-> Put the large red triangle to the left of pantry
+> Put the large red triangle to the right of the garbage
 > You are done.
-# Starting command 35
-> Store the large yellow arch
+# Starting command 23
+} Place the large blue arch anywhere but to the left of the stove
+> Move the large blue arch to the left of the stove
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
 > arch is a shape.
+> blue is a color.
 > large is a size.
-> yellow is a color.
-} Select the large yellow arch
+} Select the large blue arch
 > This is large
 > This is a arch
-> This is yellow
+> This is blue
 > Finished. 
-> The goal is the large yellow arch in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
 > Finished 
 } Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in the pantry
+> The goal is the large blue arch to the left of the stove
+> Pick up the large blue arch
+> Put the large blue arch to the left of the stove
 > You are done.
-# Starting command 36
-> Discard the large yellow arch
+# Starting command 24
+} Place the large blue arch anywhere but to the table
+> Move the large blue arch to the table
 > arch is a shape.
+> blue is a color.
 > large is a size.
-> yellow is a color.
-} Select the large yellow arch
+} Select the large blue arch
 > This is large
 > This is a arch
-> This is yellow
+> This is blue
 > Finished. 
-> The goal is the large yellow arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the large blue arch in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large yellow arch
-> Put the large yellow arch in the garbage
+> Pick up the large blue arch
+> Put the large blue arch in the table
 > You are done.
-# Starting command 37
-} Place the large green triangle anywhere but to the left of the dishwasher
-> Move the large green triangle to the left of the dishwasher
+# Starting command 25
+} Place the large blue arch in the garbage
+> Discard the large blue arch
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+> The goal is the large blue arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large blue arch
+> Put the large blue arch in the garbage
+> You are done.
+# Starting command 26
+} Place the large red rectangle in the pantry
+> Store the large red rectangle
+> large is a size.
+> rectangle is a shape.
+> red is a color.
+} Select the large red rectangle
+> This is large
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the large red rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large red rectangle
+> Put the large red rectangle in the pantry
+> You are done.
+# Starting command 27
+} Place the large green rectangle anywhere but to the right of the table
+> Move the large green rectangle to the right of the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
 > green is a color.
 > large is a size.
-> triangle is a shape.
-} Select the large green triangle
+> rectangle is a shape.
+} Select the large green rectangle
 > This is large
-> This is a triangle
+> This is a rectangle
 > This is green
 > Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> The goal is the large green triangle to the left of the dishwasher
-> Pick up the large green triangle
-> Put the large green triangle to the left of dishwasher
+> The goal is the large green rectangle to the right of the table
+> Pick up the large green rectangle
+> Put the large green rectangle to the right of the table
 > You are done.
-# Starting command 38
-> Store the large green triangle
-> green is a color.
+# Starting command 28
+} Place the small blue rectangle anywhere but to the right of the garbage
+> Move the small blue rectangle to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue rectangle to the right of the garbage
+> Pick up the small blue rectangle
+> Put the small blue rectangle to the right of the garbage
+> You are done.
+# Starting command 29
+} Place the large red triangle anywhere but to the right of the pantry
+> Move the large red triangle to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
 > large is a size.
+> red is a color.
 > triangle is a shape.
-} Select the large green triangle
+} Select the large red triangle
 > This is large
 > This is a triangle
-> This is green
+> This is red
 > Finished. 
-> The goal is the large green triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the pantry
+> The goal is the large red triangle to the right of the pantry
+> Pick up the large red triangle
+> Put the large red triangle to the right of the pantry
 > You are done.
-# Starting command 39
-} Place the large green triangle anywhere but to the dishwasher
-> Move the large green triangle to the dishwasher
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-> The goal is the large green triangle in the dishwasher
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in dishwasher
-> You are done.
-# Starting command 40
+# Starting command 30
+} Place the large red triangle in the pantry
 > Store the large red triangle
 > large is a size.
 > red is a color.
@@ -2633,177 +2735,407 @@ Start trial 2
 > This is red
 > Finished. 
 > The goal is the large red triangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
 > Pick up the large red triangle
 > Put the large red triangle in the pantry
 > You are done.
-# Starting command 41
-} Place the large yellow triangle anywhere but to the right of the table
-> Move the large yellow triangle to the right of the table
-> large is a size.
-> triangle is a shape.
-> yellow is a color.
-} Select the large yellow triangle
-> This is large
-> This is a triangle
-> This is yellow
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
+# Starting command 31
+} Place the small red rectangle anywhere but near the table
+> Move the small red rectangle near the table
+} Place the small red arch near the table
+> The small red arch is near the table
 > Finished 
 } Remove demo objects
-> The goal is the large yellow triangle to the right of the table
-> Pick up the large yellow triangle
-> Put the large yellow triangle to the right of table
-> You are done.
-# Starting command 42
-} Place the large green triangle anywhere but to the left of the dishwasher
-> Move the large green triangle to the left of the dishwasher
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the left of the dishwasher
-> Pick up the large green triangle
-> Put the large green triangle to the left of dishwasher
-> You are done.
-# Starting command 43
-> Discard the small yellow arch
-> arch is a shape.
+> rectangle is a shape.
+> red is a color.
 > small is a size.
-> yellow is a color.
-} Select the small yellow arch
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Place the small red arch near the table
+> The small red arch is near the table
+> Finished 
+} Remove demo objects
+> The goal is the small red rectangle near the table
+> Pick up the small red rectangle
+> Put the small red rectangle near the table
+> You are done.
+# Starting command 32
+} Place the small red rectangle anywhere but to the left of the pantry
+> Move the small red rectangle to the left of the pantry
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the small red rectangle to the left of the pantry
+> Pick up the small red rectangle
+> Put the small red rectangle to the left of the pantry
+> You are done.
+# Starting command 33
+} Place the small green arch anywhere but to the pantry
+> Move the small green arch to the pantry
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
 > This is small
 > This is a arch
-> This is yellow
-> Finished. 
-> The goal is the small yellow arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
-> Finished 
-} Remove demo objects
-> Pick up the small yellow arch
-> Put the small yellow arch in the garbage
-> You are done.
-# Starting command 44
-> Discard the large green triangle
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
 > This is green
 > Finished. 
-> The goal is the large green triangle in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large green triangle
-> Put the large green triangle in the garbage
+> Pick up the small green arch
+> Put the small green arch in the pantry
 > You are done.
-# Starting command 45
-} Place the large green triangle anywhere but to the left of the table
-> Move the large green triangle to the left of the table
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the left of the small blue circle
-> The small red circle is to the left of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the left of the table
-> Pick up the large green triangle
-> Put the large green triangle to the left of table
-> You are done.
-# Starting command 46
-} Place the large green triangle anywhere but to the right of the table
-> Move the large green triangle to the right of the table
-> green is a color.
-> large is a size.
-> triangle is a shape.
-} Select the large green triangle
-> This is large
-> This is a triangle
-> This is green
-> Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
-> Finished 
-} Remove demo objects
-> The goal is the large green triangle to the right of the table
-> Pick up the large green triangle
-> Put the large green triangle to the right of table
-> You are done.
-# Starting command 47
-> Discard the small yellow arch
+# Starting command 34
+} Place the large green arch in the garbage
+> Discard the large green arch
 > arch is a shape.
-> small is a size.
-> yellow is a color.
-} Select the small yellow arch
-> This is small
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
 > This is a arch
-> This is yellow
+> This is green
 > Finished. 
-> The goal is the small yellow arch in the garbage
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the large green arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the small yellow arch
-> Put the small yellow arch in the garbage
+> Pick up the large green arch
+> Put the large green arch in the garbage
 > You are done.
-# Starting command 48
-> Store the large green rectangle
-> green is a color.
+# Starting command 35
+} Place the large red rectangle anywhere but to the left of the stove
+> Move the large red rectangle to the left of the stove
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
 > large is a size.
 > rectangle is a shape.
-} Select the large green rectangle
+> red is a color.
+} Select the large red rectangle
 > This is large
 > This is a rectangle
+> This is red
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large red rectangle to the left of the stove
+> Pick up the large red rectangle
+> Put the large red rectangle to the left of the stove
+> You are done.
+# Starting command 36
+} Place the small green triangle anywhere but to the stove
+> Move the small green triangle to the stove
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
+> This is a triangle
 > This is green
 > Finished. 
-> The goal is the large green rectangle in the pantry
-} Place the small red circle in the table
-> The small red circle is in the table
+> The goal is the small green triangle in the stove
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> Pick up the large green rectangle
-> Put the large green rectangle in the pantry
+> Pick up the small green triangle
+> Put the small green triangle in the stove
 > You are done.
-# Starting command 49
-} Place the small yellow arch anywhere but to the right of the table
-> Move the small yellow arch to the right of the table
+# Starting command 37
+} Place the small green arch in the pantry
+> Store the small green arch
 > arch is a shape.
+> green is a color.
 > small is a size.
-> yellow is a color.
-} Select the small yellow arch
+} Select the small green arch
 > This is small
 > This is a arch
-> This is yellow
+> This is green
 > Finished. 
-} Place the small red circle to the right of the small blue circle
-> The small red circle is to the right of the small blue circle
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
 > Finished 
 } Remove demo objects
-> The goal is the small yellow arch to the right of the table
-> Pick up the small yellow arch
-> Put the small yellow arch to the right of table
+> Pick up the small green arch
+> Put the small green arch in the pantry
+> You are done.
+# Starting command 38
+} Place the large blue arch anywhere but to the right of the garbage
+> Move the large blue arch to the right of the garbage
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large blue arch to the right of the garbage
+> Pick up the large blue arch
+> Put the large blue arch to the right of the garbage
+> You are done.
+# Starting command 39
+} Place the small green arch anywhere but to the stove
+> Move the small green arch to the stove
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the small green arch in the stove
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green arch
+> Put the small green arch in the stove
+> You are done.
+# Starting command 40
+} Place the large green arch in the pantry
+> Store the large green arch
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the large green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large green arch
+> Put the large green arch in the pantry
+> You are done.
+# Starting command 41
+} Place the small blue triangle anywhere but to the left of the pantry
+> Move the small blue triangle to the left of the pantry
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the small blue triangle to the left of the pantry
+> Pick up the small blue triangle
+> Put the small blue triangle to the left of the pantry
+> You are done.
+# Starting command 42
+} Place the large red arch anywhere but to the right of the pantry
+> Move the large red arch to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large red arch to the right of the pantry
+> Pick up the large red arch
+> Put the large red arch to the right of the pantry
+> You are done.
+# Starting command 43
+} Place the small red rectangle anywhere but to the right of the stove
+> Move the small red rectangle to the right of the stove
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the small red rectangle to the right of the stove
+> Pick up the small red rectangle
+> Put the small red rectangle to the right of the stove
+> You are done.
+# Starting command 44
+} Place the small red rectangle in the pantry
+> Store the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+> The goal is the small red rectangle in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small red rectangle
+> Put the small red rectangle in the pantry
+> You are done.
+# Starting command 45
+} Place the large blue arch in the garbage
+> Discard the large blue arch
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+> The goal is the large blue arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large blue arch
+> Put the large blue arch in the garbage
+> You are done.
+# Starting command 46
+} Place the small green arch in the pantry
+> Store the small green arch
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+> The goal is the small green arch in the pantry
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the small green arch
+> Put the small green arch in the pantry
+> You are done.
+# Starting command 47
+} Place the large red arch anywhere but to the right of the pantry
+> Move the large red arch to the right of the pantry
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+} Place the small red arch to the right of the table
+> The small red arch is to the right of the table
+> Finished 
+} Remove demo objects
+> The goal is the large red arch to the right of the pantry
+> Pick up the large red arch
+> Put the large red arch to the right of the pantry
+> You are done.
+# Starting command 48
+} Place the large red arch in the garbage
+> Discard the large red arch
+> arch is a shape.
+> large is a size.
+> red is a color.
+} Select the large red arch
+> This is large
+> This is a arch
+> This is red
+> Finished. 
+> The goal is the large red arch in the garbage
+} Place the small red arch in the table
+> The small red arch is in the table
+> Finished 
+} Remove demo objects
+> Pick up the large red arch
+> Put the large red arch in the garbage
+> You are done.
+# Starting command 49
+} Place the large blue arch anywhere but to the left of the garbage
+> Move the large blue arch to the left of the garbage
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> arch is a shape.
+> blue is a color.
+> large is a size.
+} Select the large blue arch
+> This is large
+> This is a arch
+> This is blue
+> Finished. 
+} Place the small red arch to the left of the table
+> The small red arch is to the left of the table
+> Finished 
+} Remove demo objects
+> The goal is the large blue arch to the left of the garbage
+> Pick up the large blue arch
+> Put the large blue arch to the left of the garbage
 > You are done.
