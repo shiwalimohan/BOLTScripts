@@ -7,19 +7,19 @@
 @verb=("move","store","discard","move","move");
 $verbLength=@verb;
 
-@size=("small","medium","large");
+@size=("small","large");
 $sizeLength=@size;
 
 @color=("red","yellow","green");
 $colorLength=@color;
 
-@shape=("triangle","arch","square","rectangle");
+@shape=("triangle","arch","rectangle");
 $shapeLength=@shape;
 
 @location=("pantry","dishwasher","garbage","table");
 $locationLength=@location;
 
-@prep=("to the left of","to the right of","in front of","in");
+@prep=("to the left of","to the right of","near","in");
 $prepLength=@prep;
 
 
@@ -34,15 +34,29 @@ $discard = "discard";
 $demoObject1 = "small red circle";
 $demoObject2 = "small blue circle";
 
+my @alreadySelected;
+
 
 print "#!BechtelFormat \n";
 print "@ classifier clear \n";
 
 print "# Objects for the run are\n";
 for($i=0;$i<$objectSelectionLength;$i++){
+
+    my $found;
+    
+  START:
     $rSize = int(rand($sizeLength));
     $rColor = int(rand($colorLength));
     $rShape = int(rand($shapeLength));
+    $number=int($rSize.$rColor.$rShape);
+    for($r=0;$r<@alreadySelected;$r++){
+	if($alreadySelected[$r] == $number){
+	    goto START;
+	}
+    }
+
+    @alreadySelected[$i]=$number;
 
     $selectedSize=$size[$rSize];
     $selectedColor=$color[$rColor];
