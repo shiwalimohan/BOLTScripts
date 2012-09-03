@@ -113,14 +113,48 @@ for($j=0;$j<$trialLength;$j++){
 	$objectIndex = int(rand($objectSelectionLength));
 	$verbDirectObject=$objects[$objectIndex];
 	if($verb[$i] eq "move"){
-	  START:
-	    $locationIndex = int(rand($objectSelectionLength));
-	    if($locationIndex==$objectIndex){
-		goto START;
-	    }
+	    for($k=0;$k<$prepLength;$k++){
+	      START:
+		$locationIndex = int(rand($objectSelectionLength));
+		if($locationIndex==$objectIndex){
+		    goto START;
+		}
+		
+		$goalPreposition = $prep[$k];
+		$verbLocation = $location[int(rand($locationLength))];
+		if($goalPreposition eq "in"){
+		    $verbArgument = $verbLocation;
+		    $verbPreposition = "to";
+		}
+		else {
+		    if(int(rand(2))==0){
+			$verbArgument = $verbLocation;
+		    }
+		    else{
+			$verbArgument = $objects[$locationIndex];
+		    }
+		    $verbPreposition = $goalPreposition;
+		}
 
-	    $verbLocation = $location[int(rand($locationLength))];
-	    $verbPreposition = $prep[int(rand($prepLength))];
+		$boolSituation = int(rand(2));
+		print "} Place" . " the " . $verbDirectObject . " anywhere other than ". $goalPreposition. " the ". $verbArgument ."\n"; 
+		if ($situation[$boolSituation] eq "correct"){
+		    print "> Pick up the ". $verbDirectObject . "\n";
+		}
+		print "> ". $verb[$i] . " " . "the " . $verbDirectObject . " ". $verbPreposition. " the ". $verbArgument. "\n";
+		print "> The goal is the " . $verbDirectObject . " ".$goalPreposition." the ". $verbArgument . "\n";
+		if ($situation[$boolSituation] ne "correct"){
+		    print "> Pick up the ". $verbDirectObject . "\n";
+		}
+		if ($instruction[int(rand(2))] eq "indirect"){
+		    print "> Put the " . $verbDirectObject . " " ."in the" . " " . "table" . "\n";
+		    print "> Pick up the ". $verbDirectObject . "\n";
+		}
+		print "> Put the " . $verbDirectObject . " " . $goalPreposition ." the" . " " . $verbArgument . "\n";
+		print "> You are done.\n";
+		
+	    }
+	    
 	}
 	if ($verb[$i] ne "move"){
 
@@ -146,4 +180,4 @@ for($j=0;$j<$trialLength;$j++){
 	}
     }
 }
-	
+
