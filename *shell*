@@ -1,0 +1,846 @@
+11:55:55 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 3
+Scalar found where operator expected at ./randomizeVerbs.pl line 27, near "@instruction
+
+
+$objectSelectionLength"
+	(Missing semicolon on previous line?)
+syntax error at ./randomizeVerbs.pl line 27, near "@instruction
+
+
+$objectSelectionLength"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+11:55:59 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 3
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: large blue triangle
+# Object 1: small green rectangle
+# Object 2: large green arch
+# Training the agent for the demo object 
+} Put the large blue triangle on the board
+> Point to the large blue triangle
+> blue is a color.
+> large is a size.
+> triangle is a shape.
+} Select the large blue triangle
+> This is large
+> This is a triangle
+> This is blue
+> Finished. 
+} Reset arm
+# Training the agent for the demo object 
+} Put the small green rectangle on the board
+> Point to the small green rectangle
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
+> Finished. 
+} Reset arm
+# Training the agent for the demo object 
+} Put the large green arch on the board
+> Point to the large green arch
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Reset arm
+11:56:13 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: small red rectangle
+# Object 1: large red rectangle
+# Object 2: large blue triangle
+# Object 3: small red arch
+# Training the agent for the demo object 
+} Put the small red rectangle on the board
+> Point to the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Reset arm
+# Training the agent for the demo object 
+} Put the large red rectangle on the board
+> Point to the large red rectangle
+> large is a size.
+> rectangle is a shape.
+> red is a color.
+} Select the large red rectangle
+> This is large
+> This is a rectangle
+> This is red
+> Finished. 
+} Reset arm
+# Training the agent for the demo object 
+} Put the large blue triangle on the board
+> Point to the large blue triangle
+> blue is a color.
+> large is a size.
+> triangle is a shape.
+} Select the large blue triangle
+> This is large
+> This is a triangle
+> This is blue
+> Finished. 
+} Reset arm
+# Training the agent for the demo object 
+} Put the small red arch on the board
+> Point to the small red arch
+> arch is a shape.
+> red is a color.
+> small is a size.
+} Select the small red arch
+> This is small
+> This is a arch
+> This is red
+> Finished. 
+} Reset arm
+11:56:29 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 3
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: large green arch
+# Object 1: small blue arch
+# Object 2: large blue triangle
+# Training the agent for all objects 
+} Put the large green arch on the board
+> Point to the large green arch
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Reset arm
+} Put the small blue arch on the board
+> Point to the small blue arch
+> arch is a shape.
+> blue is a color.
+> small is a size.
+} Select the small blue arch
+> This is small
+> This is a arch
+> This is blue
+> Finished. 
+} Reset arm
+} Put the large blue triangle on the board
+> Point to the large blue triangle
+> blue is a color.
+> large is a size.
+> triangle is a shape.
+} Select the large blue triangle
+> This is large
+> This is a triangle
+> This is blue
+> Finished. 
+} Reset arm
+# Training the agent for all prepositions 
+} Place the large green arch to the left of the table
+> The large green arch is to the left of the table
+> Finished 
+} Place the large green arch to the right of the table
+> The large green arch is to the right of the table
+> Finished 
+} Place the large green arch in the table
+> The large green arch is in the table
+> Finished 
+12:00:58 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 3
+Bareword found where operator expected at ./randomizeVerbs.pl line 127, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 127, near "neq "move""
+	(Do you need to predeclare neq?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 128, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 129, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Bareword found where operator expected at ./randomizeVerbs.pl line 135, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 135, near "neq "correct""
+	(Do you need to predeclare neq?)
+syntax error at ./randomizeVerbs.pl line 127, near "] neq "
+syntax error at ./randomizeVerbs.pl line 129, near ") $prepLocation "
+syntax error at ./randomizeVerbs.pl line 132, near ")
+		print"
+syntax error at ./randomizeVerbs.pl line 135, near "] neq "
+syntax error at ./randomizeVerbs.pl line 145, near "}"
+Unmatched right curly bracket at ./randomizeVerbs.pl line 148, at end of line
+Unmatched right curly bracket at ./randomizeVerbs.pl line 150, at end of line
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:29:33 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+Bareword found where operator expected at ./randomizeVerbs.pl line 127, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 127, near "neq "move""
+	(Do you need to predeclare neq?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 128, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 129, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Bareword found where operator expected at ./randomizeVerbs.pl line 135, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 135, near "neq "correct""
+	(Do you need to predeclare neq?)
+syntax error at ./randomizeVerbs.pl line 127, near "] neq "
+syntax error at ./randomizeVerbs.pl line 129, near ") $prepLocation "
+syntax error at ./randomizeVerbs.pl line 132, near ")
+		print"
+syntax error at ./randomizeVerbs.pl line 135, near "] neq "
+syntax error at ./randomizeVerbs.pl line 145, near "}"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:30:22 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+Bareword found where operator expected at ./randomizeVerbs.pl line 126, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 126, near "neq "move""
+	(Do you need to predeclare neq?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 127, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 128, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Bareword found where operator expected at ./randomizeVerbs.pl line 135, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 135, near "neq "correct""
+	(Do you need to predeclare neq?)
+syntax error at ./randomizeVerbs.pl line 126, near "] neq "
+syntax error at ./randomizeVerbs.pl line 128, near ") $prepLocation "
+syntax error at ./randomizeVerbs.pl line 132, near ")
+		print"
+syntax error at ./randomizeVerbs.pl line 135, near "] neq "
+syntax error at ./randomizeVerbs.pl line 146, near "}"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:30:58 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+Bareword found where operator expected at ./randomizeVerbs.pl line 125, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 125, near "neq "move""
+	(Do you need to predeclare neq?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 126, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 127, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Bareword found where operator expected at ./randomizeVerbs.pl line 134, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 134, near "neq "correct""
+	(Do you need to predeclare neq?)
+syntax error at ./randomizeVerbs.pl line 125, near "] neq "
+syntax error at ./randomizeVerbs.pl line 127, near ") $prepLocation "
+syntax error at ./randomizeVerbs.pl line 131, near ")
+		print"
+syntax error at ./randomizeVerbs.pl line 134, near "] neq "
+syntax error at ./randomizeVerbs.pl line 145, near "}"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:31:37 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+Scalar found where operator expected at ./randomizeVerbs.pl line 126, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Scalar found where operator expected at ./randomizeVerbs.pl line 127, near ") $prepLocation"
+	(Missing operator before $prepLocation?)
+Bareword found where operator expected at ./randomizeVerbs.pl line 134, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 134, near "neq "correct""
+	(Do you need to predeclare neq?)
+syntax error at ./randomizeVerbs.pl line 126, near ") $prepLocation "
+syntax error at ./randomizeVerbs.pl line 127, near ") $prepLocation "
+syntax error at ./randomizeVerbs.pl line 131, near ")
+		print"
+syntax error at ./randomizeVerbs.pl line 134, near "] neq "
+syntax error at ./randomizeVerbs.pl line 146, near "}"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:33:48 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+Bareword found where operator expected at ./randomizeVerbs.pl line 134, near "] neq"
+	(Missing operator before neq?)
+String found where operator expected at ./randomizeVerbs.pl line 134, near "neq "correct""
+	(Do you need to predeclare neq?)
+syntax error at ./randomizeVerbs.pl line 131, near ")
+		print"
+syntax error at ./randomizeVerbs.pl line 134, near "] neq "
+syntax error at ./randomizeVerbs.pl line 146, near "}"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:34:14 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+syntax error at ./randomizeVerbs.pl line 131, near ")
+		print"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:34:50 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: small blue rectangle
+# Object 1: large red triangle
+# Object 2: small blue arch
+# Object 3: small blue triangle
+# Training the agent for all objects 
+} Put the small blue rectangle on the board
+> Point to the small blue rectangle
+> blue is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small blue rectangle
+> This is small
+> This is a rectangle
+> This is blue
+> Finished. 
+} Reset arm
+} Put the large red triangle on the board
+> Point to the large red triangle
+> large is a size.
+> red is a color.
+> triangle is a shape.
+} Select the large red triangle
+> This is large
+> This is a triangle
+> This is red
+> Finished. 
+} Reset arm
+} Put the small blue arch on the board
+> Point to the small blue arch
+> arch is a shape.
+> blue is a color.
+> small is a size.
+} Select the small blue arch
+> This is small
+> This is a arch
+> This is blue
+> Finished. 
+} Reset arm
+} Put the small blue triangle on the board
+> Point to the small blue triangle
+> blue is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small blue triangle
+> This is small
+> This is a triangle
+> This is blue
+> Finished. 
+} Reset arm
+# Training the agent for all prepositions 
+} Place the small blue rectangle to the left of the table
+> The small blue rectangle is to the left of the table
+> Finished 
+} Place the small blue rectangle to the right of the table
+> The small blue rectangle is to the right of the table
+> Finished 
+} Place the small blue rectangle in the table
+> The small blue rectangle is in the table
+> Finished 
+12:35:11 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 3 10
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: small blue arch
+# Object 1: large blue triangle
+# Object 2: large green rectangle
+# Training the agent for all objects 
+} Put the small blue arch on the board
+> Point to the small blue arch
+> arch is a shape.
+> blue is a color.
+> small is a size.
+} Select the small blue arch
+> This is small
+> This is a arch
+> This is blue
+> Finished. 
+} Reset arm
+} Put the large blue triangle on the board
+> Point to the large blue triangle
+> blue is a color.
+> large is a size.
+> triangle is a shape.
+} Select the large blue triangle
+> This is large
+> This is a triangle
+> This is blue
+> Finished. 
+} Reset arm
+} Put the large green rectangle on the board
+> Point to the large green rectangle
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+} Reset arm
+# Training the agent for all prepositions 
+} Place the small blue arch to the left of the table
+> The small blue arch is to the left of the table
+> Finished 
+} Place the small blue arch to the right of the table
+> The small blue arch is to the right of the table
+> Finished 
+} Place the small blue arch in the table
+> The small blue arch is in the table
+> Finished 
+# Start trial 0
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large green rectangleanywhere other than in the pantry
+> store the large green rectangle
+> The goal is the large green rectangle in the pantry
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large green rectangleanywhere other than in the garbage
+> Pick up the large green rectangle
+> discard the large green rectangle
+> The goal is the large green rectangle in the garbage
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Start trial 1
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the small blue archanywhere other than in the pantry
+> Pick up the small blue arch
+> store the small blue arch
+> The goal is the small blue arch in the pantry
+> Pick up the small blue arch
+> Pick up the small blue arch
+> Put the small blue arch in the pantry
+> You are done.
+# Starting command 2
+} Place the large green rectangleanywhere other than in the garbage
+> Pick up the large green rectangle
+> discard the large green rectangle
+> The goal is the large green rectangle in the garbage
+> Put the large green rectangle in the table
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Start trial 2
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large green rectangleanywhere other than in the pantry
+> Pick up the large green rectangle
+> store the large green rectangle
+> The goal is the large green rectangle in the pantry
+> Pick up the large green rectangle
+> Put the large green rectangle in the table
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large green rectangleanywhere other than in the garbage
+> discard the large green rectangle
+> The goal is the large green rectangle in the garbage
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Start trial 3
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large blue triangleanywhere other than in the pantry
+> store the large blue triangle
+> The goal is the large blue triangle in the pantry
+> Put the large blue triangle in the table
+> Pick up the large blue triangle
+> Pick up the large blue triangle
+> Put the large blue triangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large green rectangleanywhere other than in the garbage
+> discard the large green rectangle
+> The goal is the large green rectangle in the garbage
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Start trial 4
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large green rectangleanywhere other than in the pantry
+> store the large green rectangle
+> The goal is the large green rectangle in the pantry
+> Put the large green rectangle in the table
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large blue triangleanywhere other than in the garbage
+> Pick up the large blue triangle
+> discard the large blue triangle
+> The goal is the large blue triangle in the garbage
+> Pick up the large blue triangle
+> Pick up the large blue triangle
+> Put the large blue triangle in the garbage
+> You are done.
+# Start trial 5
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the small blue archanywhere other than in the pantry
+> store the small blue arch
+> The goal is the small blue arch in the pantry
+> Pick up the small blue arch
+> Put the small blue arch in the table
+> Pick up the small blue arch
+> Pick up the small blue arch
+> Put the small blue arch in the pantry
+> You are done.
+# Starting command 2
+} Place the large blue triangleanywhere other than in the garbage
+> Pick up the large blue triangle
+> discard the large blue triangle
+> The goal is the large blue triangle in the garbage
+> Pick up the large blue triangle
+> Put the large blue triangle in the table
+> Pick up the large blue triangle
+> Pick up the large blue triangle
+> Put the large blue triangle in the garbage
+> You are done.
+# Start trial 6
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large blue triangleanywhere other than in the pantry
+> Pick up the large blue triangle
+> store the large blue triangle
+> The goal is the large blue triangle in the pantry
+> Pick up the large blue triangle
+> Pick up the large blue triangle
+> Put the large blue triangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large green rectangleanywhere other than in the garbage
+> discard the large green rectangle
+> The goal is the large green rectangle in the garbage
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Start trial 7
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large blue triangleanywhere other than in the pantry
+> store the large blue triangle
+> The goal is the large blue triangle in the pantry
+> Pick up the large blue triangle
+> Pick up the large blue triangle
+> Put the large blue triangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large blue triangleanywhere other than in the garbage
+> Pick up the large blue triangle
+> discard the large blue triangle
+> The goal is the large blue triangle in the garbage
+> Pick up the large blue triangle
+> Pick up the large blue triangle
+> Put the large blue triangle in the garbage
+> You are done.
+# Start trial 8
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large green rectangleanywhere other than in the pantry
+> store the large green rectangle
+> The goal is the large green rectangle in the pantry
+> Pick up the large green rectangle
+> Put the large green rectangle in the table
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large green rectangleanywhere other than in the garbage
+> discard the large green rectangle
+> The goal is the large green rectangle in the garbage
+> Put the large green rectangle in the table
+> Pick up the large green rectangle
+> Pick up the large green rectangle
+> Put the large green rectangle in the garbage
+> You are done.
+# Start trial 9
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large green rectangleanywhere other than in the pantry
+> store the large green rectangle
+> The goal is the large green rectangle in the pantry
+> Pick up the large green rectangle
+> Put the large green rectangle in the pantry
+> You are done.
+# Starting command 2
+} Place the small blue archanywhere other than in the garbage
+> Pick up the small blue arch
+> discard the small blue arch
+> The goal is the small blue arch in the garbage
+> Pick up the small blue arch
+> Put the small blue arch in the garbage
+> You are done.
+12:35:35 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4 1
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: small red rectangle
+# Object 1: small green triangle
+# Object 2: small blue arch
+# Object 3: small green arch
+# Training the agent for all objects 
+} Put the small red rectangle on the board
+> Point to the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Reset arm
+} Put the small green triangle on the board
+> Point to the small green triangle
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
+> This is a triangle
+> This is green
+> Finished. 
+} Reset arm
+} Put the small blue arch on the board
+> Point to the small blue arch
+> arch is a shape.
+> blue is a color.
+> small is a size.
+} Select the small blue arch
+> This is small
+> This is a arch
+> This is blue
+> Finished. 
+} Reset arm
+} Put the small green arch on the board
+> Point to the small green arch
+> arch is a shape.
+> green is a color.
+> small is a size.
+} Select the small green arch
+> This is small
+> This is a arch
+> This is green
+> Finished. 
+} Reset arm
+# Training the agent for all prepositions 
+} Place the small red rectangle to the left of the table
+> The small red rectangle is to the left of the table
+> Finished 
+} Place the small red rectangle to the right of the table
+> The small red rectangle is to the right of the table
+> Finished 
+} Place the small red rectangle in the table
+> The small red rectangle is in the table
+> Finished 
+# Start trial 0
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the small red rectangleanywhere other than in the pantry
+> store the small red rectangle
+> The goal is the small red rectangle in the pantry
+> Put the small red rectangle in the table
+> Pick up the small red rectangle
+> Pick up the small red rectangle
+> Put the small red rectangle in the pantry
+> You are done.
+# Starting command 2
+} Place the small green triangleanywhere other than in the garbage
+> discard the small green triangle
+> The goal is the small green triangle in the garbage
+> Put the small green triangle in the table
+> Pick up the small green triangle
+> Pick up the small green triangle
+> Put the small green triangle in the garbage
+> You are done.
+12:36:13 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4 1
+Bareword found where operator expected at ./randomizeVerbs.pl line 135, near "] e"
+	(Missing operator before e?)
+String found where operator expected at ./randomizeVerbs.pl line 135, near "e "empty""
+	(Do you need to predeclare e?)
+syntax error at ./randomizeVerbs.pl line 135, near "] e "
+syntax error at ./randomizeVerbs.pl line 146, near "}"
+Execution of ./randomizeVerbs.pl aborted due to compilation errors.
+12:37:36 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4 1
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: large green arch
+# Object 1: large green rectangle
+# Object 2: small blue arch
+# Object 3: small green triangle
+# Training the agent for all objects 
+} Put the large green arch on the board
+> Point to the large green arch
+> arch is a shape.
+> green is a color.
+> large is a size.
+} Select the large green arch
+> This is large
+> This is a arch
+> This is green
+> Finished. 
+} Reset arm
+} Put the large green rectangle on the board
+> Point to the large green rectangle
+> green is a color.
+> large is a size.
+> rectangle is a shape.
+} Select the large green rectangle
+> This is large
+> This is a rectangle
+> This is green
+> Finished. 
+} Reset arm
+} Put the small blue arch on the board
+> Point to the small blue arch
+> arch is a shape.
+> blue is a color.
+> small is a size.
+} Select the small blue arch
+> This is small
+> This is a arch
+> This is blue
+> Finished. 
+} Reset arm
+} Put the small green triangle on the board
+> Point to the small green triangle
+> green is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small green triangle
+> This is small
+> This is a triangle
+> This is green
+> Finished. 
+} Reset arm
+# Training the agent for all prepositions 
+} Place the large green arch to the left of the table
+> The large green arch is to the left of the table
+> Finished 
+} Place the large green arch to the right of the table
+> The large green arch is to the right of the table
+> Finished 
+} Place the large green arch in the table
+> The large green arch is in the table
+> Finished 
+# Start trial 0
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the large green rectangleanywhere other than in the pantry
+> Pick up the large green rectangle
+> store the large green rectangle
+> The goal is the large green rectangle in the pantry
+> Put the large green rectangle in the pantry
+> You are done.
+# Starting command 2
+} Place the large green archanywhere other than in the garbage
+> discard the large green arch
+> The goal is the large green arch in the garbage
+> Put the large green arch in the garbage
+> You are done.
+12:37:55 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4 1
+#!BechtelFormat 
+@ classifier clear 
+# Objects for the run are
+# Object 0: small red triangle
+# Object 1: small blue arch
+# Object 2: small green rectangle
+# Object 3: small red rectangle
+# Training the agent for all objects 
+} Put the small red triangle on the board
+> Point to the small red triangle
+> red is a color.
+> small is a size.
+> triangle is a shape.
+} Select the small red triangle
+> This is small
+> This is a triangle
+> This is red
+> Finished. 
+} Reset arm
+} Put the small blue arch on the board
+> Point to the small blue arch
+> arch is a shape.
+> blue is a color.
+> small is a size.
+} Select the small blue arch
+> This is small
+> This is a arch
+> This is blue
+> Finished. 
+} Reset arm
+} Put the small green rectangle on the board
+> Point to the small green rectangle
+> green is a color.
+> rectangle is a shape.
+> small is a size.
+} Select the small green rectangle
+> This is small
+> This is a rectangle
+> This is green
+> Finished. 
+} Reset arm
+} Put the small red rectangle on the board
+> Point to the small red rectangle
+> rectangle is a shape.
+> red is a color.
+> small is a size.
+} Select the small red rectangle
+> This is small
+> This is a rectangle
+> This is red
+> Finished. 
+} Reset arm
+# Training the agent for all prepositions 
+} Place the small red triangle to the left of the table
+> The small red triangle is to the left of the table
+> Finished 
+} Place the small red triangle to the right of the table
+> The small red triangle is to the right of the table
+> Finished 
+} Place the small red triangle in the table
+> The small red triangle is in the table
+> Finished 
+# Start trial 0
+} rearrange objects 
+# Starting command 0
+# Starting command 1
+} Place the small blue archanywhere other than in the pantry
+> Pick up the small blue arch
+> store the small blue arch
+> The goal is the small blue arch in the pantry
+> Put the small blue arch in the pantry
+> You are done.
+# Starting command 2
+} Place the small green rectangleanywhere other than in the garbage
+> Pick up the small green rectangle
+> discard the small green rectangle
+> The goal is the small green rectangle in the garbage
+> Put the small green rectangle in the garbage
+> You are done.
+12:39:42 {master} ~/soar/BOLTScripts$ ./randomizeVerbs.pl 4 1
