@@ -108,7 +108,7 @@ for($j=0;$j<$trialLength;$j++){
     print "# Start trial " . $j . "\n";
     print "} rearrange objects \n";
     for($i=0;$i<3;$i++){
-	print "# Starting command " . $i . "\n";
+	print "# Starting command " . $count++ . "\n";
 	### create random argument
 	$objectIndex = int(rand($objectSelectionLength));
 	$verbDirectObject=$objects[$objectIndex];
