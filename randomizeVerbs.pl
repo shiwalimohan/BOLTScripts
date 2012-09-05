@@ -105,6 +105,7 @@ for ($i=0;$i<$prepLength;$i++){
 
 ### create trials for verbs
 for($j=0;$j<$trialLength;$j++){
+	$count=0;
     print "# Start trial " . $j . "\n";
     print "} rearrange objects \n";
     for($i=0;$i<3;$i++){
@@ -113,6 +114,8 @@ for($j=0;$j<$trialLength;$j++){
 	$objectIndex = int(rand($objectSelectionLength));
 	$verbDirectObject=$objects[$objectIndex];
 	if($verb[$i] eq "move"){
+	$objectIndex = int(rand($objectSelectionLength));
+	$verbDirectObject=$objects[$objectIndex];
 	    for($k=0;$k<$prepLength;$k++){
 	      START:
 		$locationIndex = int(rand($objectSelectionLength));

@@ -154,7 +154,7 @@ for($j=0;$j<$trialLength;$j++){
 	}
 
 	if ($currentVerb eq $store){
-            print "} Place" . " the " . $verbDirectObject . " in the pantry\n"; 
+            print "} Place" . " the " . $verbDirectObject . "anywhere other than in the pantry\n"; 
 	    print "> Store" . " " . "the " . $verbDirectObject . "\n";
 	    print $objectInteraction;
 	    print "> The goal is the " . $verbDirectObject . " in the ". "pantry" . "\n";
@@ -166,7 +166,7 @@ for($j=0;$j<$trialLength;$j++){
 	    print "> You are done.\n";
 	}
 	if ($currentVerb eq $discard){
-            print "} Place" . " the " . $verbDirectObject . " in the garbage\n"; 
+            print "} Place" . " the " . $verbDirectObject . "anywhere other than in the garbage\n"; 
 	    print "> Discard" . " " . "the " . $verbDirectObject . "\n";
 	    print $objectInteraction;
 	    print "> The goal is the " . $verbDirectObject . " in the ". "garbage" . "\n";

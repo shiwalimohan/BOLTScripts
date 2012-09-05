@@ -19,7 +19,7 @@ $shapeLength=@shape;
 @location=("pantry","stove","garbage","table");
 $locationLength=@location;
 
-@prep=("to the left of","to the right of","near","in");
+@prep=("to the left of","to the right of","in");
 $prepLength=@prep;
 
 
