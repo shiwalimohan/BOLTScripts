@@ -1,0 +1,371 @@
+55:51:129 Agent: Waiting for next command...
+56:06:873 UiAction: classifier clear
+56:06:874 Comment: Objects for the run are
+56:06:875 Comment: Object 0: large green triangle
+56:06:875 Comment: Object 1: large red arch
+56:06:876 Comment: Object 2: large blue rectangle
+56:06:876 Comment: Object 3: small blue rectangle
+56:06:876 Comment: Object 4: small blue triangle
+56:06:877 Comment: Object 5: small green arch
+56:06:877 Comment: Object 6: small red arch
+56:06:878 Comment: Object 7: large blue arch
+56:06:879 Comment: Object 8: small blue arch
+56:06:880 Comment: Object 9: large red rectangle
+56:06:880 Comment: Object 10: small green triangle
+56:06:881 Comment: Object 11: large green rectangle
+56:06:882 Comment: Object 12: large blue triangle
+56:06:883 Comment: The demo object is large blue triangle
+56:06:883 Comment: Training the agent for the demo object
+56:06:884 MentorAction: Put the large blue triangle on the board
+56:28:271 Mentor: Point to the large blue triangle
+56:28:561 Agent: What kind of attribute is blue?
+56:30:223 Mentor: blue is a color.
+56:30:527 Agent: What kind of attribute is large?
+56:31:791 Mentor: large is a size.
+56:32:103 Agent: What kind of attribute is triangle?
+56:33:255 Mentor: triangle is a shape.
+56:33:537 Agent: Is this a blue large triangle?
+56:33:538 MentorAction: Select the large blue triangle
+56:45:396 Mentor: yes
+56:47:149 Agent: I don't see a blue large triangle. Please teach me to recognize one
+57:05:527 Mentor: This is large
+57:05:719 Agent: Okay.
+57:05:739 Agent: Please give me teaching examples of 'a blue large triangle' and tell me 'finished' when you are done.
+57:07:559 Mentor: This is a triangle
+57:07:743 Agent: Okay.
+57:07:750 Agent: Please give me teaching examples of 'a blue large triangle' and tell me 'finished' when you are done.
+57:09:535 Mentor: This is blue
+57:09:740 Agent: Okay.
+57:09:749 Agent: Please give me teaching examples of 'a blue large triangle' and tell me 'finished' when you are done.
+57:11:567 Mentor: Finished.
+57:11:760 Agent: Waiting for next command...
+57:11:762 MentorAction: Reset arm
+57:22:143 Comment: Start trial 0
+57:22:144 MentorAction: rearrange objects
+57:24:447 Comment: Starting command 0
+57:24:447 MentorAction: Place the small green triangleanywhere other than in the pantry
+57:42:622 Mentor: Store the small green triangle
+57:42:872 Agent: What kind of attribute is green?
+57:44:070 Mentor: green is a color.
+57:44:384 Agent: What kind of attribute is small?
+57:49:342 Mentor: small is a size.
+57:49:665 Agent: Is this a green small triangle?
+58:00:275 Mentor: yes
+58:02:171 Agent: What is the goal of the action?
+58:06:142 MentorAction: Select the small green triangle
+58:22:599 Mentor: The goal is the small green triangle in the pantry
+58:22:913 Agent: I don't know the preposition in. Please teach me with examples
+58:22:914 MentorAction: Place the large blue triangle in the table
+58:39:564 Mentor: The large blue triangle is in the table
+58:40:008 Agent: Okay.
+58:40:024 Agent: Please give me teaching examples of 'preposition in' and tell me 'finished' when you are done.
+58:42:478 Mentor: Finished
+58:42:872 Agent: What action should I take next?
+58:42:874 MentorAction: Remove demo objects
+58:48:038 Mentor: Pick up the small green triangle
+58:55:074 Agent: What action should I take next?
+58:56:094 Mentor: Put the small green triangle in the pantry
+58:56:976 Agent: What action should I take next?
+59:03:966 Mentor: You are done.
+59:04:471 Agent: Waiting for next command...
+59:04:472 Comment: Starting command 1
+59:04:473 MentorAction: Place the small blue rectangle anywhere but to the left of the garbage
+00:42:991 Mentor: Move the small blue rectangle to the left of the garbage
+00:43:367 Agent: I don't know the preposition left-of. Please teach me with examples
+00:43:367 MentorAction: Place the large blue triangle to the left of the table
+02:28:541 Mentor: The large blue triangle is to the left of the table
+02:28:993 Agent: Is this a blue large triangle?
+02:39:895 Mentor: yes
+02:41:438 Agent: Is this a blue large triangle?
+02:45:043 Mentor: yes
+02:46:714 Agent: Okay.
+02:46:726 Agent: Please give me teaching examples of 'preposition left-of' and tell me 'finished' when you are done.
+02:55:097 Mentor: finished
+02:55:351 Agent: What kind of attribute is rectangle?
+02:57:989 MentorAction: Remove demo objects
+03:10:756 Mentor: rectangle is a shape.
+03:11:111 Agent: Is this a blue small rectangle?
+03:26:049 Mentor: yes
+03:27:607 Agent: Is this a blue small rectangle?
+03:32:305 Mentor: yes
+03:33:929 Agent: What is the goal of the action?
+03:40:012 MentorAction: Select the small blue rectangle
+03:45:340 MentorAction: Place the large blue triangle to the left of the table
+03:51:700 MentorAction: Remove demo objects
+03:57:012 Mentor: The goal is the small blue rectangle to the left of the garbage
+03:57:716 Agent: What action should I take next?
+03:59:500 Mentor: Pick up the small blue rectangle
+04:06:502 Agent: What action should I take next?
+04:07:972 Mentor: Put the small blue rectangle to the left of the garbage
+04:09:410 Agent: What action should I take next?
+04:17:281 Mentor: You are done.
+04:18:176 Agent: The provided instruction sequence does not lead to the provided goal. Please give the instructions again.
+04:18:177 Comment: Starting command 2
+04:18:178 MentorAction: Place the large green triangle anywhere but to the right of the table
+04:56:100 Mentor: Move the large green triangle to the right of the table
+04:56:506 Agent: I don't know the preposition right-of. Please teach me with examples
+04:56:507 MentorAction: Place the large blue triangle to the right of the table
+05:21:979 Mentor: The large blue triangle is to the right of the table
+05:22:480 Agent: Okay.
+05:22:495 Agent: Please give me teaching examples of 'preposition right-of' and tell me 'finished' when you are done.
+05:24:099 Mentor: Finished
+05:24:356 Agent: Is this a green large triangle?
+05:24:358 MentorAction: Remove demo objects
+05:33:640 Mentor: yes
+05:35:574 Agent: What is the goal of the action?
+05:42:676 MentorAction: Select the large green triangle
+05:47:603 MentorAction: Place the large blue triangle to the right of the table
+05:56:723 MentorAction: Remove demo objects
+06:05:355 Mentor: The goal is the large green triangle to the right of the table
+06:06:033 Agent: What action should I take next?
+06:07:699 Mentor: Pick up the large green triangle
+06:15:194 Agent: What action should I take next?
+06:16:403 Mentor: Put the large green triangle to the right of the table
+06:17:535 Agent: What action should I take next?
+06:24:907 Mentor: You are done.
+06:25:936 Agent: Waiting for next command...
+06:25:936 Comment: Starting command 3
+06:25:937 MentorAction: Place the large green rectangle anywhere but to the left of the pantry
+07:16:835 Mentor: Move the large green rectangle to the left of the pantry
+07:17:392 Agent: Is this a green large rectangle?
+07:17:393 MentorAction: Place the large blue triangle to the left of the table
+07:27:867 Mentor: yes
+07:29:618 Agent: I don't see a green large rectangle. Please teach me to recognize one
+07:42:611 MentorAction: Remove demo objects
+07:48:371 MentorAction: Select the large green rectangle
+07:56:202 Mentor: This is large
+07:56:453 Agent: Okay.
+07:56:470 Agent: Please give me teaching examples of 'a green large rectangle' and tell me 'finished' when you are done.
+07:58:250 Mentor: This is a rectangle
+07:58:499 Agent: Okay.
+07:58:510 Agent: Please give me teaching examples of 'a green large rectangle' and tell me 'finished' when you are done.
+07:59:466 Mentor: This is green
+07:59:699 Agent: Okay.
+07:59:712 Agent: Please give me teaching examples of 'a green large rectangle' and tell me 'finished' when you are done.
+08:00:898 Mentor: Finished.
+08:01:210 Agent: What action should I take next?
+08:01:211 MentorAction: Place the large blue triangle to the left of the table
+08:12:450 MentorAction: Remove demo objects
+11:50:642 Mentor: Pick up the large green rectangle
+11:51:050 Agent: Is this a green large rectangle?
+12:02:318 Mentor: yes
+12:03:987 Agent: Is this a green large rectangle?
+12:09:126 Mentor: yes
+12:17:645 Agent: What action should I take next?
+12:38:405 Mentor: put the large green rectangle to the left of the pantry
+12:39:944 Agent: What action should I take next?
+12:49:912 Mentor: You are done.
+12:51:445 Agent: The provided instruction sequence does not lead to the provided goal. Please give the instructions again.
+12:51:446 Comment: Starting command 4
+12:51:446 MentorAction: Place the large red archanywhere other than in the pantry
+13:16:240 Mentor: Store the large red arch
+13:16:586 Agent: What kind of attribute is arch?
+13:18:024 Mentor: arch is a shape.
+13:18:462 Agent: What kind of attribute is red?
+13:22:296 Mentor: red is a color.
+13:22:699 Agent: Is this a red large arch?
+13:22:700 MentorAction: Select the large red arch
+13:31:640 Mentor: yes
+13:40:998 Agent: Waiting for next command...
+14:03:384 MentorAction: Place the large blue triangle in the table
+14:07:160 MentorAction: Remove demo objects
+14:09:424 Comment: Starting command 5
+14:09:425 MentorAction: Place the small red arch anywhere but to the left of the table
+15:13:647 Mentor: Move the small red arch to the left of the table
+15:14:352 Agent: Is this a red small arch?
+15:14:353 MentorAction: Place the large blue triangle to the left of the table
+15:24:532 Mentor: yes
+15:26:485 Agent: What action should I take next?
+15:36:655 MentorAction: Remove demo objects
+15:48:487 MentorAction: Select the small red arch
+15:51:327 MentorAction: Place the large blue triangle to the left of the table
+15:54:728 MentorAction: Remove demo objects
+16:42:087 Mentor: Pick up the small red arch
+16:42:568 Agent: Is this a red small arch?
+17:01:300 Mentor: yes
+17:03:200 Agent: Is this a red small arch?
+17:09:635 Mentor: yes
+17:18:425 Agent: What action should I take next?
+17:21:983 Mentor: Put the small red arch to the left of the table
+17:23:184 Agent: What action should I take next?
+17:35:334 Mentor: You are done.
+17:37:459 Agent: The provided instruction sequence does not lead to the provided goal. Please give the instructions again.
+17:37:460 Comment: Starting command 6
+17:37:460 MentorAction: Place the large blue archanywhere other than in the garbage
+20:31:933 Mentor: Discard the large blue arch
+20:32:413 Agent: Is this a blue large arch?
+20:38:786 Mentor: yes
+20:40:630 Agent: What is the goal of the action?
+20:46:901 MentorAction: Select the large blue arch
+20:56:325 Mentor: The goal is the large blue arch in the garbage
+20:57:137 Agent: What action should I take next?
+20:57:137 MentorAction: Place the large blue triangle in the table
+21:05:349 MentorAction: Remove demo objects
+21:09:541 Mentor: Pick up the large blue arch
+21:16:933 Agent: What action should I take next?
+21:18:261 Mentor: Put the large blue arch in the garbage
+21:19:538 Agent: What action should I take next?
+21:27:237 Mentor: You are done.
+21:29:212 Agent: Waiting for next command...
+21:29:213 Comment: Starting command 7
+21:29:214 MentorAction: Place the large red rectangle anywhere but to the garbage
+21:57:157 Mentor: Move the large red rectangle to the garbage
+21:57:713 Agent: Is this a red large rectangle?
+22:02:890 Mentor: yes
+22:04:786 Agent: What is the goal of the action?
+22:09:853 MentorAction: Select the large red rectangle
+22:17:998 Mentor: The goal is the large red rectangle in the garbage
+22:18:778 Agent: What action should I take next?
+22:18:779 MentorAction: Place the large blue triangle in the table
+22:23:565 MentorAction: Remove demo objects
+22:27:853 Mentor: Pick up the large red rectangle
+22:35:313 Agent: What action should I take next?
+22:36:317 Mentor: Put the large red rectangle in the garbage
+22:37:570 Agent: What action should I take next?
+22:45:164 Mentor: You are done.
+22:47:432 Agent: Waiting for next command...
+22:47:432 Comment: Starting command 8
+22:47:433 MentorAction: Place the large blue archanywhere other than in the pantry
+23:24:580 Mentor: Store the large blue arch
+23:32:665 Agent: Waiting for next command...
+23:53:404 MentorAction: Select the large blue arch
+23:56:396 MentorAction: Place the large blue triangle in the table
+23:57:852 MentorAction: Remove demo objects
+24:00:508 Comment: Starting command 9
+24:00:509 MentorAction: Place the large red rectangle anywhere but to the garbage
+24:20:236 Mentor: Move the large red rectangle to the garbage
+24:28:254 Agent: Waiting for next command...
+24:55:700 MentorAction: Select the large red rectangle
+25:01:460 MentorAction: Place the large blue triangle in the table
+25:03:391 MentorAction: Remove demo objects
+25:06:881 Comment: Starting command 10
+25:06:882 MentorAction: Place the large blue arch anywhere but to the pantry
+25:44:691 Mentor: Move the large blue arch to the pantry
+25:45:467 Agent: What action should I take next?
+26:51:003 MentorAction: Select the large blue arch
+26:55:683 MentorAction: Place the large blue triangle in the table
+27:01:230 MentorAction: Remove demo objects
+27:05:028 Mentor: Pick up the large blue arch
+27:12:570 Agent: What action should I take next?
+27:13:947 Mentor: Put the large blue arch in the pantry
+27:15:472 Agent: What action should I take next?
+27:23:986 Mentor: You are done.
+27:26:551 Agent: Waiting for next command...
+27:26:552 Comment: Starting command 11
+27:26:553 MentorAction: Place the small blue triangleanywhere other than in the garbage
+27:51:930 Mentor: Discard the small blue triangle
+27:52:479 Agent: Is this a blue small triangle?
+27:57:887 Mentor: yes
+28:06:970 Agent: Waiting for next command...
+28:35:778 MentorAction: Select the small blue triangle
+28:38:010 MentorAction: Place the large blue triangle in the table
+28:39:610 MentorAction: Remove demo objects
+28:43:994 Comment: Starting command 12
+28:43:995 MentorAction: Place the large red arch anywhere but to the table
+29:04:114 Mentor: Move the large red arch to the table
+29:04:889 Agent: Is this a red large arch?
+29:09:439 Mentor: yes
+29:11:355 Agent: What action should I take next?
+29:15:586 MentorAction: Select the large red arch
+29:25:626 MentorAction: Place the large blue triangle in the table
+29:28:058 MentorAction: Remove demo objects
+29:31:922 Mentor: Pick up the large red arch
+29:32:565 Agent: Is this a red large arch?
+29:42:950 Mentor: yes
+29:51:547 Agent: What action should I take next?
+29:54:737 Mentor: Put the large red arch in the table
+29:56:121 Agent: What action should I take next?
+30:05:473 Mentor: You are done.
+30:08:418 Agent: Waiting for next command...
+30:08:418 Comment: Starting command 13
+30:08:419 MentorAction: Place the large red archanywhere other than in the garbage
+30:41:809 Mentor: Discard the large red arch
+30:42:427 Agent: Is this a red large arch?
+30:49:342 Mentor: yes
+30:58:079 Agent: Waiting for next command...
+31:09:209 MentorAction: Select the large red arch
+31:14:089 MentorAction: Place the large blue triangle in the table
+31:19:313 MentorAction: Remove demo objects
+31:21:625 Comment: Starting command 14
+31:21:625 MentorAction: Place the small blue triangle anywhere but to the left of the stove
+32:04:601 Mentor: Move the small blue triangle to the left of the stove
+32:05:350 Agent: Is this a blue small triangle?
+32:05:351 MentorAction: Place the large blue triangle to the left of the table
+32:13:165 Mentor: yes
+32:15:217 Agent: What action should I take next?
+32:21:433 MentorAction: Remove demo objects
+32:24:393 MentorAction: Select the small blue triangle
+32:26:830 MentorAction: Place the large blue triangle to the left of the table
+32:29:137 MentorAction: Remove demo objects
+32:33:224 Mentor: Pick up the small blue triangle
+32:40:758 Agent: What action should I take next?
+32:41:857 Mentor: Put the small blue triangle to the left of the stove
+32:43:321 Agent: What action should I take next?
+32:57:664 Mentor: You are done.
+33:00:812 Agent: Waiting for next command...
+33:00:813 Comment: Starting command 15
+33:00:814 MentorAction: Place the large red arch anywhere but to the left of the pantry
+33:57:752 Mentor: Move the large red arch to the left of the pantry
+33:58:778 Agent: Is this a red large arch?
+33:58:779 MentorAction: Place the large blue triangle to the left of the table
+34:03:413 Mentor: yes
+34:12:791 Agent: Waiting for next command...
+34:26:552 MentorAction: Remove demo objects
+34:28:728 MentorAction: Select the large red arch
+34:58:560 MentorAction: Place the large blue triangle to the left of the table
+35:00:704 MentorAction: Remove demo objects
+35:03:327 Comment: Starting command 16
+35:03:328 MentorAction: Place the large blue rectangleanywhere other than in the pantry
+35:32:207 Mentor: Store the large blue rectangle
+35:41:120 Agent: Waiting for next command...
+35:53:199 MentorAction: Select the large blue rectangle
+35:57:839 MentorAction: Place the large blue triangle in the table
+36:00:023 MentorAction: Remove demo objects
+36:01:847 Comment: Starting command 17
+36:01:848 MentorAction: Place the large blue rectangleanywhere other than in the garbage
+36:21:423 Mentor: Discard the large blue rectangle
+36:29:612 Agent: Waiting for next command...
+36:41:871 MentorAction: Select the large blue rectangle
+36:45:759 MentorAction: Place the large blue triangle in the table
+36:48:727 MentorAction: Remove demo objects
+36:51:119 Comment: Starting command 18
+36:51:119 MentorAction: Place the small blue archanywhere other than in the pantry
+38:01:982 Mentor: Store the small blue arch
+38:10:165 Agent: Waiting for next command...
+38:25:798 MentorAction: Select the small blue arch
+38:31:382 MentorAction: Place the large blue triangle in the table
+38:33:118 MentorAction: Remove demo objects
+38:36:342 Comment: Starting command 19
+38:36:343 MentorAction: Place the small blue archanywhere other than in the pantry
+38:51:606 Mentor: Store the small blue arch
+38:59:731 Agent: Waiting for next command...
+39:10:646 MentorAction: Select the small blue arch
+39:35:166 MentorAction: Place the large blue triangle in the table
+39:43:614 MentorAction: Remove demo objects
+39:48:286 Comment: Starting command 20
+39:48:286 MentorAction: Place the small blue triangle anywhere but to the pantry
+40:05:621 Mentor: Move the small blue triangle to the pantry
+40:13:958 Agent: Waiting for next command...
+40:31:709 MentorAction: Select the small blue triangle
+40:33:693 MentorAction: Place the large blue triangle in the table
+40:35:197 MentorAction: Remove demo objects
+40:42:509 Comment: Starting command 21
+40:42:510 MentorAction: Place the large green rectangle anywhere but to the left of the pantry
+40:59:213 Mentor: Move the large green rectangle to the left of the pantry
+41:07:809 Agent: Waiting for next command...
+41:07:809 MentorAction: Place the large blue triangle to the left of the table
+41:28:453 MentorAction: Remove demo objects
+41:30:925 MentorAction: Select the large green rectangle
+41:33:830 MentorAction: Place the large blue triangle to the left of the table
+41:36:156 MentorAction: Remove demo objects
+41:45:325 Comment: Starting command 22
+41:45:325 MentorAction: Place the large green triangle anywhere but to the left of the garbage
+42:23:949 Mentor: Move the large green triangle to the left of the garbage
+42:24:820 Agent: Is this a green large triangle?
+42:24:821 MentorAction: Place the large blue triangle to the left of the table
+42:33:124 Mentor: yes
+42:42:958 Agent: Waiting for next command...
+43:06:477 MentorAction: Remove demo objects
+43:08:844 MentorAction: Select the large green triangle
+43:12:612 MentorAction: Place the large blue triangle to the left of the table
+
